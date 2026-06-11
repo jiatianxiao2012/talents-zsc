@@ -1,12 +1,11 @@
 #!/bin/bash
 
-YAML_CONFIG="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_mep"
+YAML_CONFIG="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_mep"
 
-OPEN_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_mep_15000000/0000/checkpoint_000000"
-FC_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_mep_15000000/0000/checkpoint_000000"
-HALLWAY_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_mep_15000000/0000/checkpoint_000000"
-
-RING_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_mep_15000000/0000/checkpoint_000000"
+OPEN_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_mep_15000000/0000/checkpoint_000000"
+FC_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_mep_15000000/0000/checkpoint_000000"
+HALLWAY_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_mep_15000000/0000/checkpoint_000000"
+RING_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_mep_15000000/0000/checkpoint_000000"
 
 # OPEN_POLICIES=(
 #   "8"
@@ -84,7 +83,7 @@ RING_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_para
 
 #   echo "Running evaluation for $AGENT_PARAM"
 #   python agent_characterization/gen_data.py \
-#     --eval-episodes 18 \
+#     --eval-episodes 25 \
 #     --agent-0 "$AGENT_PARAM" \
 #     --dataset-path "./data/burrito_${LAYOUT}_bp_6pol.pkl" \
 #     --config "$YAML" \
