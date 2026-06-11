@@ -239,7 +239,7 @@ def main():
 
     args = parser.parse_args()
     
-    os.environ["CUDA_VISIBLE_DEVICES"] = "4"  
+    # os.environ["CUDA_VISIBLE_DEVICES"] = "4"  
 
     dataset = load_dataset(args.dataset_path)
 

@@ -5,7 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import argparse
 
-def eval_and_cluster(vae, dataset, save_path, batch_size,clusters=[8,20]):
+def eval_and_cluster(vae, dataset, save_path, batch_size,clusters=[11,11]):
     info = preprocess_data(vae, dataset, save_path, batch_size)
     accuracy, cluster_labels, gaussians = analyze_kmeans_clusters(info, save_path, clusters[0], clusters[1])
     #compute_human_agent_js_divergence(vae, dataset, save_path)
@@ -25,8 +25,10 @@ if __name__ == "__main__":
     parser.add_argument("--window-length", type=int, default=50, help="Length of each encoder traj input")
     parser.add_argument("--horizon", type=int, default=50, help="How many actions in the future to predict")
     parser.add_argument("--latent-dim", type=int, default=8, help="Dimension of the latent space")
-    parser.add_argument("--min-clusters", type=int, default=2)
-    parser.add_argument("--max-clusters", type=int, default=20)
+    # parser.add_argument("--min-clusters", type=int, default=2)
+    # parser.add_argument("--max-clusters", type=int, default=20)
+    parser.add_argument("--min-clusters", type=int, default=11)
+    parser.add_argument("--max-clusters", type=int, default=11)
 
     args = parser.parse_args()
  

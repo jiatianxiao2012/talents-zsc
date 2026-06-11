@@ -178,5 +178,5 @@ BASE_CONFIG:
   framework: torch
   use_gae: true
   pretrained_model_path:
-    - /data/shuyang/overcooked/src/burrito_rl/policy_params/open_mep_population/pol9/policy_state.pkl
-    - /data/shuyang/overcooked/src/burrito_rl/policy_params/open_mep_population/pol27/policy_state.pkl
+    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_mep_1000000/0000/checkpoint_000000/pol23/policy_state.pkl
+    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_mep_1000000/0000/checkpoint_000000/pol2/policy_state.pkl

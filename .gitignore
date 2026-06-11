@@ -24,4 +24,4 @@ agent_characterization/6pol*
 agent_characterization/11pol*
 agent_characterization/human_data*
 epochs_training
-eval_scripts
+eval_scripts*.log

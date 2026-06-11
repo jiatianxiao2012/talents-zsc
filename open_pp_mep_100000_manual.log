@@ -1,0 +1,1677 @@
+/home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "bool"):
+2026-06-08 19:17:53,256	INFO worker.py:1538 -- Started a local Ray instance.
+2026-06-08 19:17:55,393	INFO tensorboardx.py:170 -- pip install "ray[tune]" to see TensorBoard files.
+2026-06-08 19:17:55,393	WARNING callback.py:108 -- The TensorboardX logger cannot be instantiated because either TensorboardX or one of it's dependencies is not installed. Please make sure you have the latest version of TensorboardX installed: `pip install -U tensorboardx`
+2026-06-08 19:17:55,402	WARNING algorithm_config.py:488 -- Cannot create PPOConfig from given `config_dict`! Property alg not supported.
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:17:58,966	WARNING algorithm_config.py:488 -- Cannot create PPOConfig from given `config_dict`! Property alg not supported.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:17:59,333	INFO algorithm.py:501 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[33m(raylet)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/sitecustomize.py:2: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[2m[33m(raylet)[0m   if not hasattr(np, "bool"):
+[2m[36m(RolloutWorker pid=23313)[0m 2026-06-08 19:18:03,161	WARNING algorithm_config.py:488 -- Cannot create PPOConfig from given `config_dict`! Property name not supported.
+[2m[36m(RolloutWorker pid=23315)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:184: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23315)[0m   y_var = torch.var(y, dim=[0])
+[2m[36m(RolloutWorker pid=23315)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:188: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23315)[0m   diff_var = torch.var(y - pred, dim=[0])
+[2m[36m(RolloutWorker pid=23313)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:184: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23313)[0m   y_var = torch.var(y, dim=[0])
+[2m[36m(RolloutWorker pid=23313)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:188: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23313)[0m   diff_var = torch.var(y - pred, dim=[0])
+[2m[36m(RolloutWorker pid=23314)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:184: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23314)[0m   y_var = torch.var(y, dim=[0])
+[2m[36m(RolloutWorker pid=23314)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:188: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23314)[0m   diff_var = torch.var(y - pred, dim=[0])
+[2m[36m(RolloutWorker pid=23316)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:184: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23316)[0m   y_var = torch.var(y, dim=[0])
+[2m[36m(RolloutWorker pid=23316)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:188: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(RolloutWorker pid=23316)[0m   diff_var = torch.var(y - pred, dim=[0])
+[2m[36m(RolloutWorker pid=23315)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23315)[0m ==============================
+[2m[36m(RolloutWorker pid=23315)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23315)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23313)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23313)[0m ==============================
+[2m[36m(RolloutWorker pid=23313)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23313)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23314)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23314)[0m ==============================
+[2m[36m(RolloutWorker pid=23314)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23314)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23316)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23316)[0m ==============================
+[2m[36m(RolloutWorker pid=23316)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23316)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23315)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23315)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23315)[0m ==============================
+[2m[36m(RolloutWorker pid=23315)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23315)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23315)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23315)[0m ==============================
+[2m[36m(RolloutWorker pid=23315)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23315)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23315)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23315)[0m ==============================
+[2m[36m(RolloutWorker pid=23315)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23315)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23315)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23315)[0m ==============================
+[2m[36m(RolloutWorker pid=23315)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23315)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23315)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23315)[0m ==============================
+[2m[36m(RolloutWorker pid=23315)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23315)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23313)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23313)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23313)[0m ==============================
+[2m[36m(RolloutWorker pid=23313)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23313)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23313)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23313)[0m ==============================
+[2m[36m(RolloutWorker pid=23313)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23313)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23313)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23313)[0m ==============================
+[2m[36m(RolloutWorker pid=23313)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23313)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23313)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23313)[0m ==============================
+[2m[36m(RolloutWorker pid=23313)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23313)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23313)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23313)[0m ==============================
+[2m[36m(RolloutWorker pid=23313)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23313)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23314)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23314)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23314)[0m ==============================
+[2m[36m(RolloutWorker pid=23314)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23314)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23314)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23314)[0m ==============================
+[2m[36m(RolloutWorker pid=23314)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23314)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23314)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23314)[0m ==============================
+[2m[36m(RolloutWorker pid=23314)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23314)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23314)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23314)[0m ==============================
+[2m[36m(RolloutWorker pid=23314)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23314)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23314)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23314)[0m ==============================
+[2m[36m(PopulationPPOTrainer pid=23244)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:184: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(PopulationPPOTrainer pid=23244)[0m   y_var = torch.var(y, dim=[0])
+[2m[36m(PopulationPPOTrainer pid=23244)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/ray/rllib/utils/torch_utils.py:188: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+[2m[36m(PopulationPPOTrainer pid=23244)[0m   diff_var = torch.var(y - pred, dim=[0])
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:18:09,121	WARNING util.py:66 -- Install gputil for GPU system monitoring.
+[2m[36m(RolloutWorker pid=23313)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/numpy/core/_methods.py:181: RuntimeWarning: overflow encountered in reduce
+[2m[36m(RolloutWorker pid=23313)[0m   ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+[2m[36m(RolloutWorker pid=23314)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23314)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m init ppo policy
+[2m[36m(RolloutWorker pid=23316)[0m 0 pretrain path
+[2m[36m(RolloutWorker pid=23316)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': 1, 'correct_dish_bonus': 1, 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23316)[0m ==============================
+[2m[36m(RolloutWorker pid=23316)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23316)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23316)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23316)[0m ==============================
+[2m[36m(RolloutWorker pid=23316)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23316)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23316)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23316)[0m ==============================
+[2m[36m(RolloutWorker pid=23316)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23316)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23316)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23316)[0m ==============================
+[2m[36m(RolloutWorker pid=23316)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23316)[0m self.num_clusters None
+[2m[36m(RolloutWorker pid=23316)[0m Overwriting mdp layout standard config value rew_shaping_params:None -> {'place_tortilla_on_plate': [0, 0], 'pickup_dish_from_sink': [1, 1], 'pickup_chopped_ingredient_from_chopboard': [0, 0], 'place_ingredient_on_grill': [1, 1], 'pickup_cooked_ingredient_from_grill': [1, 1], 'place_ingredient_on_pot': [1, 1], 'pickup_cooked_ingredient_from_pot': [1, 1], 'chop_ingredient': [1, 1], 'pickup_mushroom': [0, 0], 'pickup_meat': [0, 0], 'pickup_rice': [0, 0], 'pickup_tortilla': [0, 0], 'extinguish_fire': [0, 0], 'place_charcoal_on_trash': [0, 0], 'burn_ingredient': -0.01, 'wash_dish': [1, 1], 'food_assembly': [1, 1], 'serve_dish': [5, 5], 'wrong_dish_discount': [1, 1], 'correct_dish_bonus': [1, 1], 'random_dish_delivery': 0, 'multiplier_params': [[1, 1], [4, 2], [100, 5]]}
+[2m[36m(RolloutWorker pid=23316)[0m ==============================
+[2m[36m(RolloutWorker pid=23316)[0m self.cluster_br False
+[2m[36m(RolloutWorker pid=23316)[0m self.num_clusters None
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+[2m[36m(PopulationPPOTrainer pid=23244)[0m init ppo policy
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 0 pretrain path
+== Status ==
+Current time: 2026-06-08 19:18:09 (running for 00:00:13.73)
+Memory usage on this node: 21.9/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:14 (running for 00:00:18.73)
+Memory usage on this node: 22.0/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:19 (running for 00:00:23.74)
+Memory usage on this node: 22.0/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:24 (running for 00:00:28.74)
+Memory usage on this node: 22.1/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:29 (running for 00:00:33.74)
+Memory usage on this node: 22.1/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:34 (running for 00:00:38.75)
+Memory usage on this node: 22.2/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:39 (running for 00:00:43.75)
+Memory usage on this node: 22.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:44 (running for 00:00:48.75)
+Memory usage on this node: 22.6/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:49 (running for 00:00:53.75)
+Memory usage on this node: 23.6/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:54 (running for 00:00:58.76)
+Memory usage on this node: 23.8/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:18:59 (running for 00:01:03.76)
+Memory usage on this node: 24.1/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+[2m[36m(PopulationPPOTrainer pid=23244)[0m /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/algorithms/utils/pp_util.py:48: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /shared_tmp/build_wheels_tmp.115664/python-3.10/torch/torch/csrc/utils/tensor_numpy.cpp:203.)
+[2m[36m(PopulationPPOTrainer pid=23244)[0m   obs_t = torch.from_numpy(obs).to(device)
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:19:34,267	WARNING deprecation.py:47 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+[2m[36m(PopulationPPOTrainer pid=23244)[0m /home/jtx2012/talents-pop-rorqual/lib/python3.10/site-packages/numpy/core/_methods.py:181: RuntimeWarning: overflow encountered in reduce
+[2m[36m(PopulationPPOTrainer pid=23244)[0m   ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+== Status ==
+Current time: 2026-06-08 19:19:04 (running for 00:01:08.76)
+Memory usage on this node: 25.8/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:09 (running for 00:01:13.77)
+Memory usage on this node: 31.0/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:14 (running for 00:01:18.77)
+Memory usage on this node: 33.1/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:19 (running for 00:01:23.77)
+Memory usage on this node: 35.2/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:24 (running for 00:01:28.78)
+Memory usage on this node: 36.9/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:29 (running for 00:01:33.78)
+Memory usage on this node: 35.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:34 (running for 00:01:38.79)
+Memory usage on this node: 31.7/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+
+| Trial name                               | status   | loc                |
+|------------------------------------------+----------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |
++------------------------------------------+----------+--------------------+
+
+
+Result for PopulationPPOTrainer_burrito_47a99_00000:
+  agent_timesteps_total: 36814
+  counters:
+    num_agent_steps_sampled: 36814
+    num_agent_steps_trained: 36814
+    num_env_steps_sampled: 57600
+    num_env_steps_trained: 57600
+    pol11_num_steps_trained: 1506
+    pol12_num_steps_trained: 1314
+    pol1_num_steps_trained: 2930
+    pol2_num_steps_trained: 1442
+    pol3_num_steps_trained: 3237
+    pol4_num_steps_trained: 4566
+    pol5_num_steps_trained: 6420
+    pol6_num_steps_trained: 6130
+    pol8_num_steps_trained: 1524
+    pol9_num_steps_trained: 7745
+  custom_metrics:
+    correct_dish_delivery_max: 3
+    correct_dish_delivery_mean: 0.875
+    correct_dish_delivery_min: 0
+    dish_delivery_max: 3
+    dish_delivery_mean: 0.9166666666666666
+    dish_delivery_min: 0
+    in_order_delivery_max: 3
+    in_order_delivery_mean: 0.4583333333333333
+    in_order_delivery_min: 0
+    reward_shaping_factor_max: 0.0
+    reward_shaping_factor_mean: 0.0
+    reward_shaping_factor_min: 0.0
+    shaped_reward_max: 39.879999999999825
+    shaped_reward_mean: 16.998333333333417
+    shaped_reward_min: -32.879999999999825
+    sparse_reward_max: 254.0
+    sparse_reward_mean: 74.125
+    sparse_reward_min: 0.0
+  date: 2026-06-08_19-19-36
+  done: false
+  episode_len_mean: 2400.0
+  episode_media: {}
+  episode_reward_max: 254.0
+  episode_reward_mean: 74.125
+  episode_reward_min: 0.0
+  episodes_this_iter: 24
+  episodes_total: 24
+  experiment_id: 8d213f52520941af8e90a9fd0b1e2305
+  hostname: rg31502
+  info:
+    learner:
+      pol1:
+        custom_metrics:
+          population_entropy: 2.064911514520645
+        diff_num_grad_updates_vs_sampler_policy: 7.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 2.035661742091179
+          entropy_coeff: 0.02
+          grad_gnorm: 6.136445492506027
+          kl: 0.0004865452428565731
+          policy_loss: -0.004234062595060095
+          total_loss: 0.3510661320760846
+          vf_explained_var: 0.12616870924830437
+          vf_loss: 0.7915403097867966
+        model: {}
+        num_agent_steps_trained: 732.5
+        num_grad_updates_lifetime: 8.5
+      pol11:
+        custom_metrics:
+          population_entropy: 1.9890204817056656
+        diff_num_grad_updates_vs_sampler_policy: 3.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 1.9436446726322174
+          entropy_coeff: 0.02
+          grad_gnorm: 6.47443026304245
+          kl: 0.00012429361658305993
+          policy_loss: -0.0026534823118709028
+          total_loss: 0.3905787877738476
+          vf_explained_var: 0.7977017015218735
+          vf_loss: 0.8640859946608543
+        model: {}
+        num_agent_steps_trained: 753.0
+        num_grad_updates_lifetime: 4.5
+      pol12:
+        custom_metrics:
+          population_entropy: 2.2376753985881805
+        diff_num_grad_updates_vs_sampler_policy: 3.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 2.2308233976364136
+          entropy_coeff: 0.02
+          grad_gnorm: 6.431096136569977
+          kl: 0.00017593448615288443
+          policy_loss: -0.0025284099974669516
+          total_loss: 0.5282808765769005
+          vf_explained_var: 0.4295065328478813
+          vf_loss: 1.1506755501031876
+        model: {}
+        num_agent_steps_trained: 657.0
+        num_grad_updates_lifetime: 4.5
+      pol2:
+        custom_metrics:
+          population_entropy: 2.0778543055057526
+        diff_num_grad_updates_vs_sampler_policy: 3.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 2.0715212523937225
+          entropy_coeff: 0.02
+          grad_gnorm: 5.633072376251221
+          kl: 5.289387310258853e-05
+          policy_loss: -0.002424496182356961
+          total_loss: 0.44136709347367287
+          vf_explained_var: 0.06026284396648407
+          vf_loss: 0.9703911319375038
+        model: {}
+        num_agent_steps_trained: 721.0
+        num_grad_updates_lifetime: 4.5
+      pol3:
+        custom_metrics:
+          population_entropy: 2.0077149868011475
+        diff_num_grad_updates_vs_sampler_policy: 9.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.0010000000000000002
+          entropy: 1.9583089649677277
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 5.203628277778625
+          kl: 0.00031475700357534996
+          policy_loss: -0.01118925855262205
+          total_loss: 0.3189844224601984
+          vf_explained_var: 0.3123899161815643
+          vf_loss: 0.738364988565445
+        model: {}
+        num_agent_steps_trained: 647.4
+        num_grad_updates_lifetime: 10.5
+      pol4:
+        custom_metrics:
+          population_entropy: 2.0671842098236084
+        diff_num_grad_updates_vs_sampler_policy: 11.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 2.044903129339218
+          entropy_coeff: 0.02
+          grad_gnorm: 3.5456281205018363
+          kl: 0.00024619876364403065
+          policy_loss: -0.0027458405505361347
+          total_loss: 0.3721696852395932
+          vf_explained_var: -0.0003431787093480428
+          vf_loss: 0.8313809633255005
+        model: {}
+        num_agent_steps_trained: 761.0
+        num_grad_updates_lifetime: 12.5
+      pol5:
+        custom_metrics:
+          population_entropy: 1.9923144810729556
+        diff_num_grad_updates_vs_sampler_policy: 17.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 1.964793986744351
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 3.5149758425023823
+          kl: 0.0010217509895321048
+          policy_loss: -0.003925558228123312
+          total_loss: 0.2336697589813007
+          vf_explained_var: -0.029576298263337877
+          vf_loss: 0.5527606445054213
+        model: {}
+        num_agent_steps_trained: 713.3333333333334
+        num_grad_updates_lifetime: 18.5
+      pol6:
+        custom_metrics:
+          population_entropy: 2.0062781274318695
+        diff_num_grad_updates_vs_sampler_policy: 15.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 1.9976366870105267
+          entropy_coeff: 0.02
+          grad_gnorm: 3.225962571799755
+          kl: 0.00015305921893965513
+          policy_loss: -0.0019100029749097303
+          total_loss: 0.29531570337712765
+          vf_explained_var: -0.10097791627049446
+          vf_loss: 0.6742038270458579
+        model: {}
+        num_agent_steps_trained: 766.25
+        num_grad_updates_lifetime: 16.5
+      pol8:
+        custom_metrics:
+          population_entropy: 1.9791398495435715
+        diff_num_grad_updates_vs_sampler_policy: 3.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 1.9676122814416885
+          entropy_coeff: 0.02
+          grad_gnorm: 3.326440840959549
+          kl: 6.476772932184627e-05
+          policy_loss: -0.0010984656400978565
+          total_loss: 0.4223257079720497
+          vf_explained_var: 0.18148013949394226
+          vf_loss: 0.9254880845546722
+        model: {}
+        num_agent_steps_trained: 762.0
+        num_grad_updates_lifetime: 4.5
+      pol9:
+        custom_metrics:
+          population_entropy: 1.9380596605214206
+        diff_num_grad_updates_vs_sampler_policy: 21.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.001
+          entropy: 1.9317238601771267
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 3.729736003008756
+          kl: 0.00043750231801109596
+          policy_loss: -0.0007346637761326168
+          total_loss: 0.1646401273742826
+          vf_explained_var: -0.21790048073638568
+          vf_loss: 0.40758104097436776
+        model: {}
+        num_agent_steps_trained: 704.0909090909091
+        num_grad_updates_lifetime: 22.5
+    num_agent_steps_sampled: 36814
+    num_agent_steps_trained: 36814
+    num_env_steps_sampled: 57600
+    num_env_steps_trained: 57600
+    pol11_num_steps_trained: 1506
+    pol12_num_steps_trained: 1314
+    pol1_num_steps_trained: 2930
+    pol2_num_steps_trained: 1442
+    pol3_num_steps_trained: 3237
+    pol4_num_steps_trained: 4566
+    pol5_num_steps_trained: 6420
+    pol6_num_steps_trained: 6130
+    pol8_num_steps_trained: 1524
+    pol9_num_steps_trained: 7745
+  iterations_since_restore: 1
+  node_ip: 10.83.95.102
+  num_agent_steps_sampled: 36814
+  num_agent_steps_trained: 36814
+  num_env_steps_sampled: 57600
+  num_env_steps_sampled_this_iter: 57600
+  num_env_steps_trained: 57600
+  num_env_steps_trained_this_iter: 57600
+  num_faulty_episodes: 0
+  num_healthy_workers: 4
+  num_in_flight_async_reqs: 0
+  num_remote_worker_restarts: 0
+  num_steps_trained_this_iter: 57600
+  perf:
+    cpu_util_percent: 20.021600000000007
+    ram_util_percent: 5.293599999999998
+  pid: 23244
+  pol11_num_steps_trained: 1506
+  pol12_num_steps_trained: 1314
+  pol1_num_steps_trained: 2930
+  pol2_num_steps_trained: 1442
+  pol3_num_steps_trained: 3237
+  pol4_num_steps_trained: 4566
+  pol5_num_steps_trained: 6420
+  pol6_num_steps_trained: 6130
+  pol8_num_steps_trained: 1524
+  pol9_num_steps_trained: 7745
+  policy_reward_max:
+    pol1: 127.0
+    pol11: 0.0
+    pol12: 41.5
+    pol2: 0.0
+    pol3: 41.5
+    pol4: 83.0
+    pol5: 84.0
+    pol6: 85.5
+    pol8: 44.0
+    pol9: 41.5
+  policy_reward_mean:
+    pol1: 85.5
+    pol11: 0.0
+    pol12: 41.5
+    pol2: 0.0
+    pol3: 20.75
+    pol4: 69.16666666666667
+    pol5: 43.0
+    pol6: 42.625
+    pol8: 44.0
+    pol9: 8.3
+  policy_reward_min:
+    pol1: 44.0
+    pol11: 0.0
+    pol12: 41.5
+    pol2: 0.0
+    pol3: 0.0
+    pol4: 41.5
+    pol5: 0.0
+    pol6: 0.0
+    pol8: 44.0
+    pol9: 0.0
+  sampler_perf:
+    mean_action_processing_ms: 0.19101476430992245
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 21.29405004587932
+    mean_inference_ms: 7.979500720720399
+    mean_raw_obs_processing_ms: 3.0988124895473166
+  sampler_results:
+    custom_metrics:
+      correct_dish_delivery_max: 3
+      correct_dish_delivery_mean: 0.875
+      correct_dish_delivery_min: 0
+      dish_delivery_max: 3
+      dish_delivery_mean: 0.9166666666666666
+      dish_delivery_min: 0
+      in_order_delivery_max: 3
+      in_order_delivery_mean: 0.4583333333333333
+      in_order_delivery_min: 0
+      reward_shaping_factor_max: 0.0
+      reward_shaping_factor_mean: 0.0
+      reward_shaping_factor_min: 0.0
+      shaped_reward_max: 39.879999999999825
+      shaped_reward_mean: 16.998333333333417
+      shaped_reward_min: -32.879999999999825
+      sparse_reward_max: 254.0
+      sparse_reward_mean: 74.125
+      sparse_reward_min: 0.0
+    episode_len_mean: 2400.0
+    episode_media: {}
+    episode_reward_max: 254.0
+    episode_reward_mean: 74.125
+    episode_reward_min: 0.0
+    episodes_this_iter: 24
+    hist_stats:
+      episode_lengths: [2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400,
+        2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400,
+        2400]
+      episode_reward: [0.0, 0.0, 0.0, 88.0, 88.0, 0.0, 166.0, 254.0, 0.0, 0.0, 0.0,
+        83.0, 168.0, 83.0, 0.0, 171.0, 85.0, 0.0, 88.0, 85.0, 83.0, 88.0, 83.0, 166.0]
+      policy_pol11_reward:
+      - 0.0
+      - 0.0
+      policy_pol12_reward:
+      - 41.5
+      - 41.5
+      policy_pol1_reward: [127.0, 127.0, 44.0, 44.0]
+      policy_pol2_reward:
+      - 0.0
+      - 0.0
+      policy_pol3_reward: [41.5, 41.5, 0.0, 0.0]
+      policy_pol4_reward: [83.0, 83.0, 41.5, 41.5, 83.0, 83.0]
+      policy_pol5_reward: [44.0, 44.0, 84.0, 84.0, 0.0, 0.0, 44.0, 44.0]
+      policy_pol6_reward: [0.0, 0.0, 85.5, 85.5, 42.5, 42.5, 42.5, 42.5]
+      policy_pol8_reward:
+      - 44.0
+      - 44.0
+      policy_pol9_reward: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 41.5, 41.5]
+    num_faulty_episodes: 0
+    policy_reward_max:
+      pol1: 127.0
+      pol11: 0.0
+      pol12: 41.5
+      pol2: 0.0
+      pol3: 41.5
+      pol4: 83.0
+      pol5: 84.0
+      pol6: 85.5
+      pol8: 44.0
+      pol9: 41.5
+    policy_reward_mean:
+      pol1: 85.5
+      pol11: 0.0
+      pol12: 41.5
+      pol2: 0.0
+      pol3: 20.75
+      pol4: 69.16666666666667
+      pol5: 43.0
+      pol6: 42.625
+      pol8: 44.0
+      pol9: 8.3
+    policy_reward_min:
+      pol1: 44.0
+      pol11: 0.0
+      pol12: 41.5
+      pol2: 0.0
+      pol3: 0.0
+      pol4: 41.5
+      pol5: 0.0
+      pol6: 0.0
+      pol8: 44.0
+      pol9: 0.0
+    sampler_perf:
+      mean_action_processing_ms: 0.19101476430992245
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 21.29405004587932
+      mean_inference_ms: 7.979500720720399
+      mean_raw_obs_processing_ms: 3.0988124895473166
+  time_since_restore: 87.63710308074951
+  time_this_iter_s: 87.63710308074951
+  time_total_s: 87.63710308074951
+  timers:
+    learn_throughput: 23665.468
+    learn_time_ms: 2433.926
+    synch_weights_time_ms: 26.002
+    training_iteration_time_ms: 87633.611
+  timestamp: 1780960776
+  timesteps_since_restore: 0
+  timesteps_total: 57600
+  training_iteration: 1
+  trial_id: 47a99_00000
+  warmup_time: 9.792877435684204
+  
+== Status ==
+Current time: 2026-06-08 19:19:41 (running for 00:01:46.46)
+Memory usage on this node: 32.0/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:46 (running for 00:01:51.54)
+Memory usage on this node: 28.4/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:51 (running for 00:01:56.55)
+Memory usage on this node: 28.4/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:19:56 (running for 00:02:01.55)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:01 (running for 00:02:06.55)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:06 (running for 00:02:11.56)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:11 (running for 00:02:16.56)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:16 (running for 00:02:21.57)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:21 (running for 00:02:26.57)
+Memory usage on this node: 28.2/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:26 (running for 00:02:31.58)
+Memory usage on this node: 28.2/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:31 (running for 00:02:36.58)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:36 (running for 00:02:41.58)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:41 (running for 00:02:46.58)
+Memory usage on this node: 28.2/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:46 (running for 00:02:51.59)
+Memory usage on this node: 28.2/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:51 (running for 00:02:56.59)
+Memory usage on this node: 28.3/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:20:56 (running for 00:03:01.60)
+Memory usage on this node: 28.4/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+== Status ==
+Current time: 2026-06-08 19:21:01 (running for 00:03:06.60)
+Memory usage on this node: 28.4/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 5.0/64 CPUs, 1.0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 RUNNING)
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status   | loc                |   iter |   total time (s) |    ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | RUNNING  | 10.83.95.102:23244 |      1 |          87.6371 | 57600 |   74.125 |                  254 |                    0 |               2400 |
++------------------------------------------+----------+--------------------+--------+------------------+-------+----------+----------------------+----------------------+--------------------+
+
+
+Result for PopulationPPOTrainer_burrito_47a99_00000:
+  agent_timesteps_total: 75016
+  counters:
+    num_agent_steps_sampled: 75016
+    num_agent_steps_trained: 75016
+    num_env_steps_sampled: 115200
+    num_env_steps_trained: 115200
+    pol10_num_steps_trained: 3197
+    pol11_num_steps_trained: 4599
+    pol12_num_steps_trained: 1314
+    pol1_num_steps_trained: 4529
+    pol2_num_steps_trained: 5916
+    pol3_num_steps_trained: 8006
+    pol4_num_steps_trained: 6081
+    pol5_num_steps_trained: 10977
+    pol6_num_steps_trained: 7481
+    pol7_num_steps_trained: 3617
+    pol8_num_steps_trained: 3497
+    pol9_num_steps_trained: 15802
+  custom_metrics:
+    correct_dish_delivery_max: 4
+    correct_dish_delivery_mean: 0.875
+    correct_dish_delivery_min: 0
+    dish_delivery_max: 5
+    dish_delivery_mean: 0.9166666666666666
+    dish_delivery_min: 0
+    in_order_delivery_max: 3
+    in_order_delivery_mean: 0.4375
+    in_order_delivery_min: 0
+    reward_shaping_factor_max: 0.0
+    reward_shaping_factor_mean: 0.0
+    reward_shaping_factor_min: 0.0
+    shaped_reward_max: 85.53999999999928
+    shaped_reward_mean: 20.300416666666674
+    shaped_reward_min: -32.879999999999825
+    sparse_reward_max: 339.0
+    sparse_reward_mean: 74.22916666666667
+    sparse_reward_min: 0.0
+  date: 2026-06-08_19-21-04
+  done: true
+  episode_len_mean: 2400.0
+  episode_media: {}
+  episode_reward_max: 339.0
+  episode_reward_mean: 74.22916666666667
+  episode_reward_min: 0.0
+  episodes_this_iter: 24
+  episodes_total: 48
+  experiment_id: 8d213f52520941af8e90a9fd0b1e2305
+  hostname: rg31502
+  info:
+    learner:
+      pol1:
+        custom_metrics:
+          population_entropy: 1.9783163666725159
+        diff_num_grad_updates_vs_sampler_policy: 5.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.0010000000000000002
+          entropy: 1.9465804596741993
+          entropy_coeff: 0.019999999999999997
+          grad_gnorm: 6.691085437933604
+          kl: 0.009197992516478237
+          policy_loss: -0.0009206458538149794
+          total_loss: 0.20511018089018762
+          vf_explained_var: 0.4187829941511154
+          vf_loss: 0.48532588842014474
+        model: {}
+        num_agent_steps_trained: 533.0
+        num_grad_updates_lifetime: 22.5
+      pol10:
+        custom_metrics:
+          population_entropy: 1.9827993154525756
+        diff_num_grad_updates_vs_sampler_policy: 9.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.0010000000000000002
+          entropy: 1.9667338013648987
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 1.1521771907806397
+          kl: 0.0039282186691647954
+          policy_loss: -0.015986726415576413
+          total_loss: 0.03850121708819643
+          vf_explained_var: -0.27391253113746644
+          vf_loss: 0.18371701836586
+        model: {}
+        num_agent_steps_trained: 639.4
+        num_grad_updates_lifetime: 10.5
+      pol11:
+        custom_metrics:
+          population_entropy: 2.0025785624980927
+        diff_num_grad_updates_vs_sampler_policy: 9.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.0010000000000000002
+          entropy: 1.959816962480545
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 1.7660641729831696
+          kl: 0.007361803504913489
+          policy_loss: 0.003574451059103012
+          total_loss: 0.0908343514893204
+          vf_explained_var: -0.4919994831085205
+          vf_loss: 0.2492315720766783
+        model: {}
+        num_agent_steps_trained: 618.6
+        num_grad_updates_lifetime: 18.5
+      pol2:
+        custom_metrics:
+          population_entropy: 2.0341724356015525
+        diff_num_grad_updates_vs_sampler_policy: 11.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.001
+          entropy: 2.0190667609373727
+          entropy_coeff: 0.02
+          grad_gnorm: 2.654741920530796
+          kl: 0.005115021323987705
+          policy_loss: -0.015974821741110645
+          total_loss: 0.08189297125985225
+          vf_explained_var: -0.2790715843439102
+          vf_loss: 0.27394073984275263
+        model: {}
+        num_agent_steps_trained: 745.6666666666666
+        num_grad_updates_lifetime: 20.5
+      pol3:
+        custom_metrics:
+          population_entropy: 2.008877784013748
+        diff_num_grad_updates_vs_sampler_policy: 13.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.0010000000000000002
+          entropy: 1.96492657491139
+          entropy_coeff: 0.02
+          grad_gnorm: 2.2628355526498387
+          kl: 0.006738947852726099
+          policy_loss: -0.019060287386569792
+          total_loss: 0.05864855978039226
+          vf_explained_var: -0.3531812812600817
+          vf_loss: 0.2306452744773456
+        model: {}
+        num_agent_steps_trained: 681.2857142857143
+        num_grad_updates_lifetime: 34.5
+      pol4:
+        custom_metrics:
+          population_entropy: 2.072780668735504
+        diff_num_grad_updates_vs_sampler_policy: 3.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.001
+          entropy: 2.0253439247608185
+          entropy_coeff: 0.02
+          grad_gnorm: 4.537343755364418
+          kl: 0.006400784001878046
+          policy_loss: -0.009736650109516631
+          total_loss: 0.17657037125900388
+          vf_explained_var: -0.7947904095053673
+          vf_loss: 0.450427389703691
+        model: {}
+        num_agent_steps_trained: 757.5
+        num_grad_updates_lifetime: 28.5
+      pol5:
+        custom_metrics:
+          population_entropy: 2.054117759068807
+        diff_num_grad_updates_vs_sampler_policy: 11.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.001
+          entropy: 2.020025630791982
+          entropy_coeff: 0.02
+          grad_gnorm: 2.7880619391798973
+          kl: 0.006137123521399908
+          policy_loss: -0.014177298260619864
+          total_loss: 0.07084548446194579
+          vf_explained_var: -0.15920894096295038
+          vf_loss: 0.24777802700797716
+        model: {}
+        num_agent_steps_trained: 759.5
+        num_grad_updates_lifetime: 48.5
+      pol6:
+        custom_metrics:
+          population_entropy: 2.156051814556122
+        diff_num_grad_updates_vs_sampler_policy: 3.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.001
+          entropy: 2.1427491903305054
+          entropy_coeff: 0.02
+          grad_gnorm: 5.259621128439903
+          kl: 0.002879277483075704
+          policy_loss: -0.01586766610853374
+          total_loss: 0.2536769029684365
+          vf_explained_var: -0.02623090147972107
+          vf_loss: 0.6233594752848148
+        model: {}
+        num_agent_steps_trained: 675.5
+        num_grad_updates_lifetime: 36.5
+      pol7:
+        custom_metrics:
+          population_entropy: 1.800970333814621
+        diff_num_grad_updates_vs_sampler_policy: 9.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.5
+          cur_lr: 0.0010000000000000002
+          entropy: 1.7812465846538543
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 1.2007465273141862
+          kl: 0.005329014129963647
+          policy_loss: -0.020652319490909576
+          total_loss: 0.02576369313756004
+          vf_explained_var: -0.35226849019527434
+          vf_loss: 0.15875286739319563
+        model: {}
+        num_agent_steps_trained: 723.4
+        num_grad_updates_lifetime: 10.5
+      pol8:
+        custom_metrics:
+          population_entropy: 1.7038958072662354
+        diff_num_grad_updates_vs_sampler_policy: 5.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.0010000000000000002
+          entropy: 1.6824256777763367
+          entropy_coeff: 0.019999999999999997
+          grad_gnorm: 3.0516090442736945
+          kl: 0.005353092507771236
+          policy_loss: -0.012800161979005983
+          total_loss: 0.08152740712588032
+          vf_explained_var: -0.2587162454922994
+          vf_loss: 0.25327562044064206
+        model: {}
+        num_agent_steps_trained: 657.6666666666666
+        num_grad_updates_lifetime: 14.5
+      pol9:
+        custom_metrics:
+          population_entropy: 1.903246213089336
+        diff_num_grad_updates_vs_sampler_policy: 21.5
+        learner_stats:
+          allreduce_latency: 0.0
+          cur_kl_coeff: 0.25
+          cur_lr: 0.001
+          entropy: 1.891705185174942
+          entropy_coeff: 0.020000000000000004
+          grad_gnorm: 2.6153378188610077
+          kl: 0.007010812070941497
+          policy_loss: -0.01711157641759862
+          total_loss: 0.02645881071062335
+          vf_explained_var: 0.26010247387669305
+          vf_loss: 0.15930356889624486
+        model: {}
+        num_agent_steps_trained: 732.4545454545455
+        num_grad_updates_lifetime: 66.5
+    num_agent_steps_sampled: 75016
+    num_agent_steps_trained: 75016
+    num_env_steps_sampled: 115200
+    num_env_steps_trained: 115200
+    pol10_num_steps_trained: 3197
+    pol11_num_steps_trained: 4599
+    pol12_num_steps_trained: 1314
+    pol1_num_steps_trained: 4529
+    pol2_num_steps_trained: 5916
+    pol3_num_steps_trained: 8006
+    pol4_num_steps_trained: 6081
+    pol5_num_steps_trained: 10977
+    pol6_num_steps_trained: 7481
+    pol7_num_steps_trained: 3617
+    pol8_num_steps_trained: 3497
+    pol9_num_steps_trained: 15802
+  iterations_since_restore: 2
+  node_ip: 10.83.95.102
+  num_agent_steps_sampled: 75016
+  num_agent_steps_trained: 75016
+  num_env_steps_sampled: 115200
+  num_env_steps_sampled_this_iter: 57600
+  num_env_steps_trained: 115200
+  num_env_steps_trained_this_iter: 57600
+  num_faulty_episodes: 0
+  num_healthy_workers: 4
+  num_in_flight_async_reqs: 0
+  num_remote_worker_restarts: 0
+  num_steps_trained_this_iter: 57600
+  perf:
+    cpu_util_percent: 6.379200000000001
+    ram_util_percent: 5.662400000000002
+  pid: 23244
+  pol10_num_steps_trained: 3197
+  pol11_num_steps_trained: 4599
+  pol12_num_steps_trained: 1314
+  pol1_num_steps_trained: 4529
+  pol2_num_steps_trained: 5916
+  pol3_num_steps_trained: 8006
+  pol4_num_steps_trained: 6081
+  pol5_num_steps_trained: 10977
+  pol6_num_steps_trained: 7481
+  pol7_num_steps_trained: 3617
+  pol8_num_steps_trained: 3497
+  pol9_num_steps_trained: 15802
+  policy_reward_max:
+    pol1: 127.0
+    pol10: 84.0
+    pol11: 42.5
+    pol12: 41.5
+    pol2: 85.5
+    pol3: 85.0
+    pol4: 83.0
+    pol5: 84.0
+    pol6: 169.5
+    pol7: 41.5
+    pol8: 44.0
+    pol9: 83.0
+  policy_reward_mean:
+    pol1: 57.0
+    pol10: 42.0
+    pol11: 14.166666666666666
+    pol12: 41.5
+    pol2: 32.375
+    pol3: 34.1
+    pol4: 51.875
+    pol5: 36.57142857142857
+    pol6: 68.0
+    pol7: 20.75
+    pol8: 22.0
+    pol9: 25.35
+  policy_reward_min:
+    pol1: 0.0
+    pol10: 0.0
+    pol11: 0.0
+    pol12: 41.5
+    pol2: 0.0
+    pol3: 0.0
+    pol4: 0.0
+    pol5: 0.0
+    pol6: 0.0
+    pol7: 0.0
+    pol8: 0.0
+    pol9: 0.0
+  sampler_perf:
+    mean_action_processing_ms: 0.1931726467212123
+    mean_env_render_ms: 0.0
+    mean_env_wait_ms: 21.37192238995385
+    mean_inference_ms: 8.189387259104159
+    mean_raw_obs_processing_ms: 3.1006115382816617
+  sampler_results:
+    custom_metrics:
+      correct_dish_delivery_max: 4
+      correct_dish_delivery_mean: 0.875
+      correct_dish_delivery_min: 0
+      dish_delivery_max: 5
+      dish_delivery_mean: 0.9166666666666666
+      dish_delivery_min: 0
+      in_order_delivery_max: 3
+      in_order_delivery_mean: 0.4375
+      in_order_delivery_min: 0
+      reward_shaping_factor_max: 0.0
+      reward_shaping_factor_mean: 0.0
+      reward_shaping_factor_min: 0.0
+      shaped_reward_max: 85.53999999999928
+      shaped_reward_mean: 20.300416666666674
+      shaped_reward_min: -32.879999999999825
+      sparse_reward_max: 339.0
+      sparse_reward_mean: 74.22916666666667
+      sparse_reward_min: 0.0
+    episode_len_mean: 2400.0
+    episode_media: {}
+    episode_reward_max: 339.0
+    episode_reward_mean: 74.22916666666667
+    episode_reward_min: 0.0
+    episodes_this_iter: 24
+    hist_stats:
+      episode_lengths: [2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400,
+        2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400,
+        2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400,
+        2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400, 2400]
+      episode_reward: [0.0, 0.0, 0.0, 88.0, 88.0, 0.0, 166.0, 254.0, 0.0, 0.0, 0.0,
+        83.0, 168.0, 83.0, 0.0, 171.0, 85.0, 0.0, 88.0, 85.0, 83.0, 88.0, 83.0, 166.0,
+        85.0, 0.0, 168.0, 83.0, 85.0, 0.0, 88.0, 0.0, 0.0, 83.0, 0.0, 0.0, 171.0, 0.0,
+        339.0, 85.0, 85.0, 0.0, 166.0, 0.0, 170.0, 0.0, 88.0, 88.0]
+      policy_pol10_reward: [84.0, 84.0, 0.0, 0.0]
+      policy_pol11_reward: [0.0, 0.0, 42.5, 42.5, 0.0, 0.0]
+      policy_pol12_reward:
+      - 41.5
+      - 41.5
+      policy_pol1_reward: [127.0, 127.0, 44.0, 44.0, 0.0, 0.0]
+      policy_pol2_reward: [0.0, 0.0, 85.5, 85.5, 0.0, 0.0, 44.0, 44.0]
+      policy_pol3_reward: [41.5, 41.5, 0.0, 0.0, 0.0, 0.0, 85.0, 85.0, 44.0, 44.0]
+      policy_pol4_reward: [83.0, 83.0, 41.5, 41.5, 83.0, 83.0, 0.0, 0.0]
+      policy_pol5_reward: [44.0, 44.0, 84.0, 84.0, 0.0, 0.0, 44.0, 44.0, 41.5, 41.5,
+        42.5, 42.5, 0.0, 0.0]
+      policy_pol6_reward: [0.0, 0.0, 85.5, 85.5, 42.5, 42.5, 42.5, 42.5, 169.5, 169.5]
+      policy_pol7_reward: [41.5, 41.5, 0.0, 0.0]
+      policy_pol8_reward: [44.0, 44.0, 0.0, 0.0]
+      policy_pol9_reward: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 41.5, 41.5, 42.5,
+        42.5, 0.0, 0.0, 44.0, 44.0, 42.5, 42.5, 83.0, 83.0]
+    num_faulty_episodes: 0
+    policy_reward_max:
+      pol1: 127.0
+      pol10: 84.0
+      pol11: 42.5
+      pol12: 41.5
+      pol2: 85.5
+      pol3: 85.0
+      pol4: 83.0
+      pol5: 84.0
+      pol6: 169.5
+      pol7: 41.5
+      pol8: 44.0
+      pol9: 83.0
+    policy_reward_mean:
+      pol1: 57.0
+      pol10: 42.0
+      pol11: 14.166666666666666
+      pol12: 41.5
+      pol2: 32.375
+      pol3: 34.1
+      pol4: 51.875
+      pol5: 36.57142857142857
+      pol6: 68.0
+      pol7: 20.75
+      pol8: 22.0
+      pol9: 25.35
+    policy_reward_min:
+      pol1: 0.0
+      pol10: 0.0
+      pol11: 0.0
+      pol12: 41.5
+      pol2: 0.0
+      pol3: 0.0
+      pol4: 0.0
+      pol5: 0.0
+      pol6: 0.0
+      pol7: 0.0
+      pol8: 0.0
+      pol9: 0.0
+    sampler_perf:
+      mean_action_processing_ms: 0.1931726467212123
+      mean_env_render_ms: 0.0
+      mean_env_wait_ms: 21.37192238995385
+      mean_inference_ms: 8.189387259104159
+      mean_raw_obs_processing_ms: 3.1006115382816617
+  time_since_restore: 175.17368388175964
+  time_this_iter_s: 87.53658080101013
+  time_total_s: 175.17368388175964
+  timers:
+    learn_throughput: 29029.279
+    learn_time_ms: 1984.204
+    synch_weights_time_ms: 24.987
+    training_iteration_time_ms: 87583.003
+  timestamp: 1780960864
+  timesteps_since_restore: 0
+  timesteps_total: 115200
+  training_iteration: 2
+  trial_id: 47a99_00000
+  warmup_time: 9.792877435684204
+  [2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,495	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,499	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,501	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,504	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,506	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,509	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,511	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,514	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,516	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,518	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,521	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+[2m[36m(PopulationPPOTrainer pid=23244)[0m 2026-06-08 19:21:04,523	WARNING policy.py:121 -- Can not figure out a durable policy name for <class 'burrito_rl.algorithms.agent_ppo_policy.PPOPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2026-06-08 19:21:05,053	INFO tune.py:762 -- Total run time: 189.73 seconds (189.30 seconds for the tuning loop).
+
+[CustomLogger] copied checkpoint to ./policy_params/open_pp_mep_100000/0000/checkpoint_000002
+== Status ==
+Current time: 2026-06-08 19:21:04 (running for 00:03:09.38)
+Memory usage on this node: 28.5/503.4 GiB 
+Using FIFO scheduling algorithm.
+Resources requested: 0/64 CPUs, 0/1 GPUs, 0.0/93.13 GiB heap, 0.0/46.57 GiB objects (0.0/1.0 accelerator_type:H100)
+Result logdir: /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/exp_data/open_pp_mep_100000/open_pp_mep_100000
+Number of trials: 1/1 (1 TERMINATED)
++------------------------------------------+------------+--------------------+--------+------------------+--------+----------+----------------------+----------------------+--------------------+
+| Trial name                               | status     | loc                |   iter |   total time (s) |     ts |   reward |   episode_reward_max |   episode_reward_min |   episode_len_mean |
+|------------------------------------------+------------+--------------------+--------+------------------+--------+----------+----------------------+----------------------+--------------------|
+| PopulationPPOTrainer_burrito_47a99_00000 | TERMINATED | 10.83.95.102:23244 |      2 |          175.174 | 115200 |  74.2292 |                  339 |                    0 |               2400 |
++------------------------------------------+------------+--------------------+--------+------------------+--------+----------+----------------------+----------------------+--------------------+
+
+
