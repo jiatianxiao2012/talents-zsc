@@ -238,7 +238,7 @@ for i in "${!RING_POLICIES_A[@]}"; do
 
   echo "Running evaluation for $AGENT_PARAM"
   python agent_characterization/gen_data.py \
-    --eval-episodes 18 \
+    --eval-episodes 25 \
     --agent-0 "$AGENT_PARAM" \
     --dataset-path "./data/burrito_${LAYOUT}_mep_24pol.pkl" \
     --config "$YAML" \
