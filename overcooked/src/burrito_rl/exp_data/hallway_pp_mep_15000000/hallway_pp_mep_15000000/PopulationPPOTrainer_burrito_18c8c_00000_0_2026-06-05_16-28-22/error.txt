@@ -1,0 +1,17 @@
+Failure # 1 (occurred at 2026-06-05_16-28-25)
+Traceback (most recent call last):
+  File "/home/jtx2012/talents-zsc-env/lib/python3.10/site-packages/ray/tune/execution/ray_trial_executor.py", line 1070, in get_next_executor_event
+    future_result = ray.get(ready_future)
+  File "/home/jtx2012/talents-zsc-env/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/home/jtx2012/talents-zsc-env/lib/python3.10/site-packages/ray/_private/worker.py", line 2311, in get
+    raise value
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::CustomTrainer.__init__()[39m (pid=1908369, ip=10.83.100.102, repr=PopulationPPOTrainer)
+  File "/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/algorithms/agent_ppo_trainer.py", line 85, in __init__
+    base = self.get_config(config)
+  File "/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/algorithms/utils/pp_util.py", line 101, in population_rllib_config
+    "policies": {
+  File "/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/algorithms/utils/pp_util.py", line 110, in <dictcomp>
+    "pretrained_model_path": Config["pretrained_model_path"][i],
+IndexError: list index out of range
+

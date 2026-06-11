@@ -25,3 +25,4 @@ agent_characterization/11pol*
 agent_characterization/human_data*
 epochs_training
 eval_scripts*.log
+.DS_Store
