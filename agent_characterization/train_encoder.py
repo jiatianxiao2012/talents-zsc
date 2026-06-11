@@ -238,6 +238,14 @@ def main():
     parser.add_argument("--save-dir", type=str, default="open_bp", help="Directory to save the encoder")
 
     args = parser.parse_args()
+
+    ################# TJ LAB GPU Setting #####################
+
+    os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+    if torch.cuda.is_available():
+        torch.cuda.set_per_process_memory_fraction(0.33)
+
+    ################# TJ LAB GPU Setting #####################
     
     # os.environ["CUDA_VISIBLE_DEVICES"] = "4"  
 
