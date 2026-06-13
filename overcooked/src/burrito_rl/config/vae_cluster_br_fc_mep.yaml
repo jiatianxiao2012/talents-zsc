@@ -175,7 +175,7 @@ BASE_CONFIG:
   num_gpus_per_worker: 0
   framework: torch
   use_gae: true
-  partner_sampling_method: random
+  partner_sampling_method: priority
   num_history: 10
   
 
