@@ -140,7 +140,7 @@ BASE_CONFIG:
   env: burrito
   count_steps_by: env_steps
   alg: "BR"
-  n_population: 12
+  n_population: 24
   sgd_minibatch_size: 768 # sgd minibatch for each policy
   num_sgd_iter: 4
   train_batch_size: 38400
