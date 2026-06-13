@@ -4,17 +4,18 @@ N_AGENTS: &n_agnets 2
 ACTOR_EMBEDDING_DIM: &actor_embedding_dim 424 #776
 CRITIC_EMBEDDING_DIM: &critic_embedding_dim 424 #776
 CLUSTER_EMBEDDING_DIM: &cluster_embedding_dim 32
-N_CLUSTERS: &n_clusters 1
+N_CLUSTERS: &n_clusters 11
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  vae_path: "/data/benji/strategy-adaptation/agent_characterization/gamma_fc_mep/20250514_021201_ep_100"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/15000000/fc_mep/20260612_w_50_h_50_b_0.05"
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/15000000/fc_mep/20260612_w_50_h_50_b_0.05/kmeans/gaussians.pkl"
   latent_dim: 8
   window_length: 100
   vae_horizon: 1
   action_dim: 27
   obs_shape: [10, 8, *obs_channel]
-  gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/gamma_fc_mep/20250514_021201_ep_100/20250514_121019/kmeans/gaussians.pkl"
+
 
 # Model configuration using cluster conditioning
 MODEL_CONFIG:
@@ -186,18 +187,14 @@ BASE_CONFIG:
   decay_factor: 1
 
   evaluation_interval: 100
-  pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/forced_coordination_bp_population
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_mep_15000000/0000/checkpoint_000000
   pretrained_model_paths:
-    - 33
-    - 27
-    - 3
-    - 22
-    - 8
-    - 20
-    - 31
-    - 28
-    - 14
-    - 17
+    - 101
+    - 102
+    - 111
+    - 112
+    - 121
+    - 122
   
   # Include VAE configuration
   <<: *vae_config
