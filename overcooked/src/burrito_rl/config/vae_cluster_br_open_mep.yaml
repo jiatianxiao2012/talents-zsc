@@ -4,7 +4,7 @@ N_AGENTS: &n_agnets 2
 ACTOR_EMBEDDING_DIM: &actor_embedding_dim 200 #776
 CRITIC_EMBEDDING_DIM: &critic_embedding_dim 200 #776
 CLUSTER_EMBEDDING_DIM: &cluster_embedding_dim 32
-N_CLUSTERS: &n_clusters 13
+N_CLUSTERS: &n_clusters 11
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
