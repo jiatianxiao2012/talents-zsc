@@ -8,7 +8,7 @@ N_CLUSTERS: &n_clusters 13
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/15000000/ring_mep/20260612_w_50_h_50_b_0.05" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/15000000/open_mep/20260612_w_50_h_50_b_0.05" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/"
   latent_dim: 8
   window_length: 50
   vae_horizon: 50
