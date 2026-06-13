@@ -11,8 +11,8 @@ VAE_CONFIG: &vae_config
   vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/15000000/fc_mep/20260612_w_50_h_50_b_0.05"
   gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/15000000/fc_mep/20260612_w_50_h_50_b_0.05/kmeans/gaussians.pkl"
   latent_dim: 8
-  window_length: 100
-  vae_horizon: 1
+  window_length: 50 #100
+  vae_horizon: 50 #1
   action_dim: 27
   obs_shape: [10, 8, *obs_channel]
 
