@@ -181,7 +181,7 @@ BASE_CONFIG:
   alpha: 0.4
   decay_factor: 1
 
-  evaluation_interval: 100
+  evaluation_interval: 40
   pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_mep_15000000/0000/checkpoint_000000
   pretrained_model_paths:
     - 101
