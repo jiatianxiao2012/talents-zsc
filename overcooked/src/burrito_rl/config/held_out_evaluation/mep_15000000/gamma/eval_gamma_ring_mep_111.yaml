@@ -147,8 +147,8 @@ BASE_CONFIG:
   # VAE Configuration
   #vae_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/demo_13cl/"
   latent_dim: 8
-  window_length: 10
-  vae_horizon: 10
+  window_length: 50
+  vae_horizon: 50
   action_dim: 27
   obs_shape: [8, 10, *obs_channel]
   #gaussians_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/demo_13cl/20250819_132951/kmeans/gaussians.pkl"
