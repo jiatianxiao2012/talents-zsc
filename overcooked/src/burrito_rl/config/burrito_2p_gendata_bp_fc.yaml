@@ -1,8 +1,8 @@
 ACTION_SPACE_VALUE: 27
 OBS_SPACE_CHANNEL: 12
 N_AGENTS: 2
-ACTOR_EMBEDDING_DIM: 776
-CRITIC_EMBEDDING_DIM: 776
+ACTOR_EMBEDDING_DIM: 392
+CRITIC_EMBEDDING_DIM: 392
 MODEL_CONFIG:
   custom_model: IPPO_model
   custom_model_config:
@@ -32,12 +32,12 @@ MODEL_CONFIG:
         - valid
         - default
     actor_layer_sizes:
-      - - 776
+      - - 392
         - 64
       - - 64
         - 27
     critic_layer_sizes:
-      - - 776
+      - - 392
         - 64
       - - 64
         - 1
@@ -47,7 +47,7 @@ ENV_CONFIG:
   max_steps: 2400
   n_agents: 2
   action_level: high
-  layout: burrito
+  layout: fc
   reward_shaping_factor: 0.4
   reward_shaping_horizon: 20000000
   use_phi: false
@@ -61,7 +61,7 @@ ENV_CONFIG:
         high: 65535
         shape:
           - 10
-          - 12
+          - 8
           - 12
         dtype: int32
       action_mask:
@@ -178,5 +178,5 @@ BASE_CONFIG:
   framework: torch
   use_gae: true
   pretrained_model_path:
-    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected/pol14/policy_state.pkl
-    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected/pol3/policy_state.pkl
+    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected/pol27/policy_state.pkl
+    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected/pol3/policy_state.pkl

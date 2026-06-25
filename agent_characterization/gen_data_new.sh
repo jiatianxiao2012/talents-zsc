@@ -1,12 +1,11 @@
 #!/bin/bash
 
-YAML_CONFIG="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_mep"
+YAML_CONFIG="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_bp"
 
-OPEN_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_mep_15000000/0000/checkpoint_000000"
-FC_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_mep_15000000/0000/checkpoint_000000"
-HALLWAY_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_mep_15000000/0000/checkpoint_000000"
-
-RING_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_mep_15000000/0000/checkpoint_000000"
+OPEN_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/pp_24_selected"
+FC_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected"
+HALLWAY_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected"
+RING_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected"
 
 # OPEN_POLICIES=(
 #   "8"
@@ -217,13 +216,13 @@ RING_POLICIES_B=(
   "18"
 )
 
-LAYOUT="ring"
-POP_DIR=$RING_POP_DIR
+LAYOUT="open"
+POP_DIR=$OPEN_POP_DIR
 YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
 
-for i in "${!RING_POLICIES_A[@]}"; do
-  POL_A="${RING_POLICIES_A[$i]}"
-  POL_B="${RING_POLICIES_B[$i]}"
+for i in "${!OPEN_POLICIES_A[@]}"; do
+  POL_A="${OPEN_POLICIES_A[$i]}"
+  POL_B="${OPEN_POLICIES_B[$i]}"
 
   echo "Population Directory: $POP_DIR"
   echo "Processing pair: $POL_A vs $POL_B"
@@ -239,9 +238,9 @@ for i in "${!RING_POLICIES_A[@]}"; do
 
   echo "Running evaluation for $AGENT_PARAM"
   python agent_characterization/gen_data.py \
-    --eval-episodes 18 \
+    --eval-episodes 25 \
     --agent-0 "$AGENT_PARAM" \
-    --dataset-path "./data/burrito_${LAYOUT}_mep_24pol.pkl" \
+    --dataset-path "./data/burrito_${LAYOUT}_bp_24pol.pkl" \
     --config "$YAML" \
     --layout "$LAYOUT" \
     --save-data
