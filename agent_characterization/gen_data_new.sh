@@ -1,11 +1,11 @@
 #!/bin/bash
 
-YAML_CONFIG="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_bp"
+YAML_CONFIG="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_bp"
 
-OPEN_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/pp_24_selected"
-FC_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected"
-HALLWAY_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected"
-RING_POP_DIR="/scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected"
+OPEN_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/pp_24_selected"
+FC_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected"
+HALLWAY_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected"
+RING_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected"
 
 # OPEN_POLICIES=(
 #   "8"
