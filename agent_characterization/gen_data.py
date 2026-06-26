@@ -425,6 +425,14 @@ def main():
     
     args = parser.parse_args()
 
+    ################# TJ LAB GPU Setting #####################
+
+    os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+    if torch.cuda.is_available():
+        torch.cuda.set_per_process_memory_fraction(0.33)
+
+    ################# TJ LAB GPU Setting #####################
+
 #    if args.agent_0 is None or args.agent_1 is None:
 #        agent_names = get_policy_names_from_checkpoint(args.checkpoint)
 #        print(f"Found agent names: {agent_names}")
