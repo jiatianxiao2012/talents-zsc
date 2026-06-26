@@ -158,10 +158,10 @@ BASE_CONFIG:
   gamma: 0.995
   rollout_fragment_length: 1200
   batch_mode: truncate_episodes
-  num_workers: 8
+  num_workers: 4
   num_envs_per_worker: 4
   num_cpus_per_worker: 1
-  num_cpus_for_driver: 8
+  num_cpus_for_driver: 1
   num_gpus: 1
   num_gpus_per_worker: 0
   # evaluation_num_workers: 1
@@ -173,12 +173,10 @@ BASE_CONFIG:
   #   num_envs_per_worker: 5
   framework: torch
   use_gae: true
-  population_path: /data/shuyang/overcooked/src/burrito_rl/policy_params/ring_bp_population/
-  #specific_partners: [25,15,17,11,20,43,12,18,40,10,44]
-  specific_partners: [13,1,33,25,31,11,17,21,41,5,2,24]
+  population_path: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected
+  specific_partners: [25, 16, 26, 6, 23, 8, 24, 4, 12, 2, 11, 7]
   partner_sampling_method: priority # random or priority
   num_history: 10
-
 
   custom_eval: True
 
@@ -187,15 +185,17 @@ BASE_CONFIG:
   decay_factor: 1
 
   evaluation_interval: 40
-  pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/ring_bp_population
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected
   pretrained_model_paths:
-    - 33
-    - 27
-    - 3
-    - 22
-    - 8
-    - 20
-    - 31
-    - 28
     - 14
+    - 28
+    - 13
+    - 27
+    - 1
+    - 21
     - 17
+    - 22
+    - 3
+    - 15
+    - 5
+    - 18
