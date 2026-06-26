@@ -4,23 +4,33 @@ N_AGENTS: &n_agnets 2
 ACTOR_EMBEDDING_DIM: &actor_embedding_dim 392 #776
 CRITIC_EMBEDDING_DIM: &critic_embedding_dim 392 #776
 CLUSTER_EMBEDDING_DIM: &cluster_embedding_dim 32
-N_CLUSTERS: &n_clusters 2
+N_CLUSTERS: &n_clusters 11
+
+# # VAE Configuration
+# VAE_CONFIG: &vae_config
+#   #vae_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/fc_training_ll/20250508_171753_ep_100" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/"
+
+#   vae_path: "/data/benji/strategy-adaptation/agent_characterization/fc_training_ll/20250508_171753_ep_100"
+#   latent_dim: 8
+#   window_length: 50
+#   vae_horizon: 50
+#   action_dim: 27
+#   obs_shape: [10, 8, *obs_channel]
+#   #gaussians_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/fc_training_ll/20250508_171753_ep_100/20250508_224929/kmeans/gaussians.pkl" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/kmeans/gaussians.pkl"
+
+#   #gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/fc_training_ll/20250508_171753_ep_100/20250604_134230/kmeans/gaussians.pkl"
+
+#   gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/fc_training_ll/20250508_171753_ep_100/20250604_134135/kmeans/gaussians.pkl"
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  #vae_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/fc_training_ll/20250508_171753_ep_100" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/"
-
-  vae_path: "/data/benji/strategy-adaptation/agent_characterization/fc_training_ll/20250508_171753_ep_100"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/fc_bp/20260626_w_50_h_50_b_0.05/"
   latent_dim: 8
   window_length: 50
   vae_horizon: 50
   action_dim: 27
   obs_shape: [10, 8, *obs_channel]
-  #gaussians_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/fc_training_ll/20250508_171753_ep_100/20250508_224929/kmeans/gaussians.pkl" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/kmeans/gaussians.pkl"
-
-  #gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/fc_training_ll/20250508_171753_ep_100/20250604_134230/kmeans/gaussians.pkl"
-
-  gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/fc_training_ll/20250508_171753_ep_100/20250604_134135/kmeans/gaussians.pkl"
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/fc_bp/20260626_w_50_h_50_b_0.05/kmeans/gaussians.pkl"
 
 # Model configuration using cluster conditioning
 MODEL_CONFIG:
@@ -174,10 +184,10 @@ BASE_CONFIG:
   gamma: 0.995
   rollout_fragment_length: 1200 # half episode
   batch_mode: truncate_episodes
-  num_workers: 8
+  num_workers: 4
   num_envs_per_worker: 4
   num_cpus_per_worker: 1
-  num_cpus_for_driver: 8
+  num_cpus_for_driver: 1
   num_gpus: 1
   num_gpus_per_worker: 0
   framework: torch
@@ -191,20 +201,35 @@ BASE_CONFIG:
   alpha: 0.4
   decay_factor: 1
 
-  evaluation_interval: 40
-  pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/forced_coordination_bp_population
-  pretrained_model_paths:
-    - 33
-    - 27
-    - 3
-    - 22
-    - 8
-    - 20
-    - 31
-    - 28
-    - 14
-    - 17
+  # evaluation_interval: 40
+  # pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/forced_coordination_bp_population
+  # pretrained_model_paths:
+  #   - 33
+  #   - 27
+  #   - 3
+  #   - 22
+  #   - 8
+  #   - 20
+  #   - 31
+  #   - 28
+  #   - 14
+  #   - 17
   
+  evaluation_interval: 40
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected
+  pretrained_model_paths:
+    - 3
+    - 11
+    - 8
+    - 23
+    - 16
+    - 13
+    - 1
+    - 21
+    - 18
+    - 28
+    - 6
+    - 26
   
   # Include VAE configuration
   <<: *vae_config

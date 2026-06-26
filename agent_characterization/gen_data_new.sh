@@ -216,13 +216,13 @@ RING_POLICIES_B=(
   "18"
 )
 
-LAYOUT="ring"
-POP_DIR=$RING_POP_DIR
+LAYOUT="open"
+POP_DIR=$OPEN_POP_DIR
 YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
 
-for i in "${!RING_POLICIES_A[@]}"; do
-  POL_A="${RING_POLICIES_A[$i]}"
-  POL_B="${RING_POLICIES_B[$i]}"
+for i in "${!OPEN_POLICIES_A[@]}"; do
+  POL_A="${OPEN_POLICIES_A[$i]}"
+  POL_B="${OPEN_POLICIES_B[$i]}"
 
   echo "Population Directory: $POP_DIR"
   echo "Processing pair: $POL_A vs $POL_B"
@@ -240,7 +240,7 @@ for i in "${!RING_POLICIES_A[@]}"; do
   python agent_characterization/gen_data.py \
     --eval-episodes 25 \
     --agent-0 "$AGENT_PARAM" \
-    --dataset-path "./data/burrito_${LAYOUT}_mep_24pol.pkl" \
+    --dataset-path "./data/burrito_${LAYOUT}_bp_24pol.pkl" \
     --config "$YAML" \
     --layout "$LAYOUT" \
     --save-data
