@@ -1,11 +1,11 @@
 #!/bin/bash
 
-YAML_CONFIG="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_mep"
+YAML_CONFIG="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_bp"
 
-OPEN_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_mep_15000000/0000/checkpoint_000000"
-FC_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_mep_15000000/0000/checkpoint_000000"
-HALLWAY_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_mep_15000000/0000/checkpoint_000000"
-RING_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_mep_15000000/0000/checkpoint_000000"
+OPEN_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/selected_24"
+FC_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected"
+HALLWAY_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected"
+RING_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected"
 
 # OPEN_POLICIES=(
 #   "8"
@@ -83,7 +83,7 @@ RING_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl
 
 #   echo "Running evaluation for $AGENT_PARAM"
 #   python agent_characterization/gen_data.py \
-#     --eval-episodes 25 \
+#     --eval-episodes 18 \
 #     --agent-0 "$AGENT_PARAM" \
 #     --dataset-path "./data/burrito_${LAYOUT}_bp_6pol.pkl" \
 #     --config "$YAML" \
@@ -96,157 +96,228 @@ RING_POP_DIR="$HOME/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl
 
 # echo "All directories processed"
 
-OPEN_POLICIES_A=(
-  "23"
-  "12"
-  "22"
-  "16"
-  "14"
-  "4"
-  "15"
-  "8"
-  "21"
-  "18"
-  "26"
-  "6"
-)
+# Number of policies for each layout
+# mep/fcp final checkpoints: 1-8 larger mid-checkpoints: 11-18 smaller mid-checkpoints: 21-28
+# mep/fcp eval/final checkpoints: 101-104 eval larger mid-checkpoints: 111-114 eval smaller mid-checkpoints: 121-124
+# bp part1 0000:8 0001-0007 1-7 part2 0000: 18 0001-0007 11-17 part3 0000: 28 0001-0007 21-27
+# bp polBRX vs polX: 1-8, 11-18, 21-28
 
-OPEN_POLICIES_B=(
-  "2"
-  "28"
-  "5"
-  "25"
-  "1"
-  "13"
-  "7"
-  "24"
-  "17"
-  "27"
-  "3"
-  "11"
-)
-
-FC_POLICIES_A=(
-  "27"
-  "2"
-  "17"
-  "12"
-  "25"
-  "5"
-  "14"
-  "15"
-  "22"
-  "4"
-  "24"
-  "7"
-)
-
-FC_POLICIES_B=(
-  "3"
-  "11"
-  "8"
-  "23"
-  "16"
-  "13"
-  "1"
-  "21"
-  "18"
-  "28"
-  "6"
-  "26"
-)
-
-HALLWAY_POLICIES_A=(
-  "14"
-  "7"
-  "22"
-  "8"
-  "25"
-  "6"
-  "26"
-  "18"
-  "28"
-  "5"
-  "17"
-  "1"
-)
-
-HALLWAY_POLICIES_B=(
-  "3"
-  "23"
-  "16"
-  "24"
-  "13"
-  "21"
-  "15"
-  "27"
-  "2"
-  "11"
-  "4"
-  "12"
-)
-
-RING_POLICIES_A=(
-  "25"
-  "16"
-  "26"
-  "6"
-  "23"
-  "8"
-  "24"
-  "4"
-  "12"
-  "2"
-  "11"
-  "7"
-)
-
-RING_POLICIES_B=(
-  "14"
-  "28"
-  "13"
-  "27"
-  "1"
-  "21"
-  "17"
-  "22"
-  "3"
-  "15"
-  "5"
-  "18"
-)
+####################### TJ bp part #################################
+#!/bin/bash
 
 LAYOUT="open"
-POP_DIR=$OPEN_POP_DIR
+POP_DIR="$OPEN_POP_DIR"
 YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
 
-for i in "${!OPEN_POLICIES_A[@]}"; do
-  POL_A="${OPEN_POLICIES_A[$i]}"
-  POL_B="${OPEN_POLICIES_B[$i]}"
+OPEN_POLICIES=(
+  "23" "2" "14" "28" "7" "17" "1" "24"
+  "12" "26" "5" "21" "8" "16" "3" "27"
+  "11" "25" "4" "22" "6" "18" "13" "15"
+)
 
+for POL in "${OPEN_POLICIES[@]}"; do
   echo "Population Directory: $POP_DIR"
-  echo "Processing pair: $POL_A vs $POL_B"
+  echo "Processing pair: pol$POL vs polBR$POL"
   echo "Using Config: $YAML"
 
-  POL1_PATH="$POP_DIR/pol$POL_A/policy_state.pkl"
-  POL2_PATH="$POP_DIR/pol$POL_B/policy_state.pkl"
+  POL1_PATH="$POP_DIR/pol$POL/policy_state.pkl"
+  POLBR_PATH="$POP_DIR/polBR$POL/policy_state.pkl"
 
-  AGENT_PARAM="agent-${POL_A}_vs_${POL_B}"
+  AGENT_0_PARAM="pol$POL"
+  AGENT_1_PARAM="polBR$POL"
 
-  yq -i -y ".BASE_CONFIG.pretrained_model_path[0] = \"$POL1_PATH\"" "$YAML"
-  yq -i -y ".BASE_CONFIG.pretrained_model_path[1] = \"$POL2_PATH\"" "$YAML"
+  yq e ".BASE_CONFIG.pretrained_model_path[0] = \"$POL1_PATH\"" -i "$YAML"
+  yq e ".BASE_CONFIG.pretrained_model_path[1] = \"$POLBR_PATH\"" -i "$YAML"
 
-  echo "Running evaluation for $AGENT_PARAM"
+
+  echo "Running evaluation for $AGENT_0_PARAM vs $AGENT_1_PARAM"
   python agent_characterization/gen_data.py \
-    --eval-episodes 25 \
-    --agent-0 "$AGENT_PARAM" \
-    --dataset-path "./data/burrito_${LAYOUT}_bp_24pol.pkl" \
+    --eval-episodes 18 \
+    --agent-0 "$AGENT_0_PARAM" \
+    --agent-1 "$AGENT_1_PARAM" \
+    --dataset-path "./data/burrito_${LAYOUT}_bp_3parts_pol24.pkl" \
     --config "$YAML" \
     --layout "$LAYOUT" \
     --save-data
 
-  echo "Completing processing for pair $POL_A vs $POL_B"
+  echo "Completing processing for pair pol$POL vs polBR$POL"
   echo "----------------------------------------"
 done
 
 echo "All directories processed"
+
+
+
+##########################################################################
+
+######################## TJ mep/fcp part #################################
+
+# OPEN_POLICIES_A=(
+#   "23"
+#   "12"
+#   "22"
+#   "16"
+#   "14"
+#   "4"
+#   "15"
+#   "8"
+#   "21"
+#   "18"
+#   "26"
+#   "6"
+# )
+
+# OPEN_POLICIES_B=(
+#   "2"
+#   "28"
+#   "5"
+#   "25"
+#   "1"
+#   "13"
+#   "7"
+#   "24"
+#   "17"
+#   "27"
+#   "3"
+#   "11"
+# )
+
+# FC_POLICIES_A=(
+#   "27"
+#   "2"
+#   "17"
+#   "12"
+#   "25"
+#   "5"
+#   "14"
+#   "15"
+#   "22"
+#   "4"
+#   "24"
+#   "7"
+# )
+
+# FC_POLICIES_B=(
+#   "3"
+#   "11"
+#   "8"
+#   "23"
+#   "16"
+#   "13"
+#   "1"
+#   "21"
+#   "18"
+#   "28"
+#   "6"
+#   "26"
+# )
+
+# HALLWAY_POLICIES_A=(
+#   "14"
+#   "7"
+#   "22"
+#   "8"
+#   "25"
+#   "6"
+#   "26"
+#   "18"
+#   "28"
+#   "5"
+#   "17"
+#   "1"
+# )
+
+# HALLWAY_POLICIES_B=(
+#   "3"
+#   "23"
+#   "16"
+#   "24"
+#   "13"
+#   "21"
+#   "15"
+#   "27"
+#   "2"
+#   "11"
+#   "4"
+#   "12"
+# )
+
+# RING_POLICIES_A=(
+#   "25"
+#   "16"
+#   "26"
+#   "6"
+#   "23"
+#   "8"
+#   "24"
+#   "4"
+#   "12"
+#   "2"
+#   "11"
+#   "7"
+# )
+
+# RING_POLICIES_B=(
+#   "14"
+#   "28"
+#   "13"
+#   "27"
+#   "1"
+#   "21"
+#   "17"
+#   "22"
+#   "3"
+#   "15"
+#   "5"
+#   "18"
+# )
+
+# LAYOUT="open"
+# POP_DIR=$OPEN_POP_DIR
+# YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
+
+# for i in "${!OPEN_POLICIES_A[@]}"; do
+#   POL_A="${OPEN_POLICIES_A[$i]}"
+#   POL_B="${OPEN_POLICIES_B[$i]}"
+
+#   echo "Population Directory: $POP_DIR"
+#   echo "Processing pair: $POL_A vs $POL_B"
+#   echo "Using Config: $YAML"
+
+#   POL1_PATH="$POP_DIR/pol$POL_A/policy_state.pkl"
+#   POL2_PATH="$POP_DIR/pol$POL_B/policy_state.pkl"
+
+#   # AGENT_PARAM="agent-${POL_A}_vs_${POL_B}"
+#   AGENT_0_PARAM="pol${POL_A}"
+#   AGENT_1_PARAM="pol${POL_B}"
+
+#   # yq -i -y ".BASE_CONFIG.pretrained_model_path[0] = \"$POL1_PATH\"" "$YAML"
+#   # yq -i -y ".BASE_CONFIG.pretrained_model_path[1] = \"$POL2_PATH\"" "$YAML"
+
+#   yq e ".BASE_CONFIG.pretrained_model_path[0] = \"$POL1_PATH\"" -i "$YAML"
+#   yq e ".BASE_CONFIG.pretrained_model_path[1] = \"$POL2_PATH\"" -i "$YAML"
+#   # echo "Running evaluation for $AGENT_PARAM"
+#   # python agent_characterization/gen_data.py \
+#   #   --eval-episodes 10 \
+#   #   --agent-0 "$AGENT_PARAM" \
+#   #   --dataset-path "./data/burrito_${LAYOUT}_bp_24pol_polBR.pkl" \
+#   #   --config "$YAML" \
+#   #   --layout "$LAYOUT" \
+#   #   --save-data
+#   echo "Running evaluation for $AGENT_0_PARAM vs $AGENT_1_PARAM"
+#   python agent_characterization/gen_data.py \
+#     --eval-episodes 10 \
+#     --agent-0 "$AGENT_0_PARAM" \
+#     --agent-1 "$AGENT_1_PARAM" \
+#     --dataset-path "./data/burrito_${LAYOUT}_bp_24pol.pkl" \
+#     --config "$YAML" \
+#     --layout "$LAYOUT" \
+#     --save-data
+
+#   echo "Completing processing for pair $POL_A vs $POL_B"
+#   echo "----------------------------------------"
+# done
+
+# echo "All directories processed"
+
+##############################################################################
