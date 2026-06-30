@@ -173,10 +173,10 @@ BASE_CONFIG:
   num_envs_per_worker: 4
   num_cpus_per_worker: 1
   num_cpus_for_driver: 1
-  num_gpus: 1
+  num_gpus: 0
   num_gpus_per_worker: 0
   framework: torch
   use_gae: true
   pretrained_model_path:
-    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/pp_24_selected/pol23/policy_state.pkl
-    - /scratch/jtx2012/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/pp_24_selected/pol2/policy_state.pkl
+    - /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/selected_24/pol17/policy_state.pkl
+    - /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/selected_24/polBR17/policy_state.pkl
