@@ -6,7 +6,7 @@ CRITIC_EMBEDDING_DIM: &critic_embedding_dim 200 #776
 CLUSTER_EMBEDDING_DIM: &cluster_embedding_dim 32
 N_CLUSTERS: &n_clusters 11
 
-# VAE Configuration
+# VAE Configuration.
 VAE_CONFIG: &vae_config
   vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_bp/20260630_w_50_h_50_b_0.01/"
   latent_dim: 8
