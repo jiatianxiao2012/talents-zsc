@@ -1,20 +1,32 @@
 ACTION_SPACE_VALUE: &action_space 27
 OBS_SPACE_CHANNEL: &obs_channel 12
 N_AGENTS: &n_agnets 2
-ACTOR_EMBEDDING_DIM: &actor_embedding_dim 200 #776
-CRITIC_EMBEDDING_DIM: &critic_embedding_dim 200 #776
+ACTOR_EMBEDDING_DIM: &actor_embedding_dim 776
+CRITIC_EMBEDDING_DIM: &critic_embedding_dim 776
 CLUSTER_EMBEDDING_DIM: &cluster_embedding_dim 32
 N_CLUSTERS: &n_clusters 11
 
+# #  VAE Configuration
+# VAE_CONFIG: &vae_config
+#   vae_path: "/data/benji/strategy-adaptation/agent_characterization/hallway_training_ll/20250508_231458_ep_100" 
+#   latent_dim: 8
+#   window_length: 50
+#   vae_horizon: 50
+#   action_dim: 27
+#   obs_shape: [10, 12, *obs_channel]
+#   #gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/hallway_training_ll/20250508_231458_ep_100/20250509_002550/kmeans/gaussians.pkl" # 4 cl
+#   #gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/hallway_training_ll/20250508_231458_ep_100/20250715_114637/kmeans/gaussians.pkl" #11 cl
+#   gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/hallway_training_ll/20250508_231458_ep_100/20250710_143106/kmeans/gaussians.pkl" # 15 cl
+
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_bp/20260626_w_50_h_50_b_0.05/"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/hallway_bp/20260626_w_50_h_50_b_0.05/"
   latent_dim: 8
   window_length: 50
   vae_horizon: 50
   action_dim: 27
-  obs_shape: [7, 10, *obs_channel]
-  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_bp/20260626_w_50_h_50_b_0.05/kmeans/gaussians.pkl"
+  obs_shape: [10, 12, *obs_channel]
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/hallway_bp/20260626_w_50_h_50_b_0.05/kmeans/gaussians.pkl"
 
 # Model configuration using cluster conditioning
 MODEL_CONFIG:
@@ -46,13 +58,16 @@ MODEL_CONFIG:
         - 1
         - valid
         - "default"
+    # Updated layer sizes to account for cluster embedding
     actor_layer_sizes:
-      - - 200
+      #- - 232 #808  # actor_embedding_dim (768) + order_list (8) + cluster_embedding (32)
+      - - 776
         - 64
       - - 64
         - *action_space
     critic_layer_sizes:
-      - - 200
+      #- - 232 #808  # Same calculation as actor
+      - - 776
         - 64
       - - 64
         - 1
@@ -64,7 +79,7 @@ ENV_CONFIG:
   max_steps: 2400
   n_agents: *n_agnets
   action_level: high
-  layout: open
+  layout: burrito
   reward_shaping_factor: 0
   annealing_reward_shaping: true
   reward_shaping_horizon: 25000000
@@ -79,7 +94,7 @@ ENV_CONFIG:
         type: Box
         low: -65535
         high: 65535
-        shape: [7, 10, *obs_channel]
+        shape: [10, 12, *obs_channel]
         dtype: int32
       action_mask:
         type: Box
@@ -166,14 +181,14 @@ BASE_CONFIG:
   rollout_fragment_length: 1200
   batch_mode: truncate_episodes
   num_workers: 4
-  num_envs_per_worker: 4 
+  num_envs_per_worker: 4
   num_cpus_per_worker: 1
   num_cpus_for_driver: 1
   num_gpus: 1
   num_gpus_per_worker: 0
   framework: torch
   use_gae: true
-  partner_sampling_method: priority
+  partner_sampling_method: random
   num_history: 10
 
   custom_eval: True
@@ -183,7 +198,7 @@ BASE_CONFIG:
   decay_factor: 1
 
   # evaluation_interval: 40
-  # pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/open_mep_population
+  # pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/hallway_mep_population
   # pretrained_model_paths:
   #   - 33
   #   - 27
@@ -195,21 +210,22 @@ BASE_CONFIG:
   #   - 28
   #   - 14
   #   - 17
+
   evaluation_interval: 40
-  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/pp_24_selected
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected
   pretrained_model_paths:
-    - 2
-    - 28
-    - 5
-    - 25
-    - 1
-    - 13
-    - 7
-    - 24
-    - 17
-    - 27
     - 3
+    - 23
+    - 16
+    - 24
+    - 13
+    - 21
+    - 15
+    - 27
+    - 2
     - 11
-  
+    - 4
+    - 12
+
   # Include VAE configuration
   <<: *vae_config
