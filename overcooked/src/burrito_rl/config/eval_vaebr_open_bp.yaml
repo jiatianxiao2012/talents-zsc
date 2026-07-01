@@ -153,13 +153,12 @@ BASE_CONFIG:
   obs_shape: [7, 10, *obs_channel]
   #gaussians_path: "/Users/benjili/Research/burrito_cooperation/agent_characterization/demo_13cl/20250819_132951/kmeans/gaussians.pkl"
 
-  vae_path: "/data/benji/strategy-adaptation/agent_characterization/open_bp/20250627_175003_ep_100/" #"/data/benji/strategy-adaptation/agent_characterization/encoder_training_open_11bp/20250507_213839_ep_100/" 
-  gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/open_bp/20250627_175003_ep_100/20250701_093824/kmeans/gaussians.pkl"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_bp/20260630_w_50_h_50_b_0.01"
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_bp/20260630_w_50_h_50_b_0.01/kmeans/gaussians.pkl"
 
-  # Model paths
-  pretrained_model_path_BR: "/data/benji/strategy-adaptation/overcooked/src/burrito_rl/policy_params/FINAL_vaebr_gpuoptim_open_bp_norw-1/0000/checkpoint_001563/policies/polBR/policy_state.pkl"
+  pretrained_model_path_BR: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/policy_params/talents/talents_open_bp_1500000_8/0000/checkpoint_000391/policies/polBR/policy_state.pkl"
 
-  pretrained_model_path_eval: "/data/benji/strategy-adaptation/overcooked/src/burrito_rl/policy_params/FINAL_vaebr_gpuoptim_open_bp_norw-1/0000/checkpoint_001563/policies/polBR/policy_state.pkl"
+  pretrained_model_path_eval: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/eval/pol7/policy_state.pkl"
 
   #pretrained_model_path_BR: "/Users/benjili/Research/burrito_cooperation/overcooked/src/burrito_rl/policy_params/vaebr_DEMO-1/polBR1/policy_state.pkl" # reward vaebr for demo
 
