@@ -83,6 +83,13 @@ ENV_CONFIG:
         shape:
           - 8
         dtype: int8
+      prev_action:
+        type: Box
+        low: 0
+        high: 8
+        shape:
+          - *action_space
+        dtype: float32
   action_space:
     type: Discrete
     n: *action_space
