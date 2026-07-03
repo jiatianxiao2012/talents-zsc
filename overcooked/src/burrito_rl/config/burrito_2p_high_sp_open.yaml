@@ -47,7 +47,7 @@ ENV_CONFIG:
   max_steps: 2400
   n_agents: *n_agnets
   action_level: high # low
-  layout: burrito
+  layout: open
   reward_shaping_factor: 0 #0.4
   reward_shaping_horizon: 20000000
   use_phi: false
