@@ -11,3 +11,5 @@ exp_data/** filter=lfs diff=lfs merge=lfs -text
 events.out.tfevents.* filter=lfs diff=lfs merge=lfs -text
 benji_config/** filter=lfs diff=lfs merge=lfs -text
 data/15000000/*.part-* filter=lfs diff=lfs merge=lfs -text
+
+benji_config/bp\ configs/hallway_2p_bp.yaml -filter -diff -merge text
