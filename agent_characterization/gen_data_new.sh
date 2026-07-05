@@ -3,9 +3,9 @@
 YAML_CONFIG="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/config/burrito_2p_gendata_bp"
 
 OPEN_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_bp_1500000_8/selected_24"
-FC_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/pp_24_selected"
-HALLWAY_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected"
-RING_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/pp_24_selected"
+FC_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/fc_pp_bp_1500000_8/selected_24"
+HALLWAY_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/selected_24"
+RING_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_bp_1500000_8/selected_24"
 
 # OPEN_POLICIES=(
 #   "8"
@@ -96,18 +96,17 @@ RING_POP_DIR="/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burr
 
 # echo "All directories processed"
 
-# Number of policies for each layout
+
+##################### Number of policies for each layout #######################
+
 # mep/fcp final checkpoints: 1-8 larger mid-checkpoints: 11-18 smaller mid-checkpoints: 21-28
 # mep/fcp eval/final checkpoints: 101-104 eval larger mid-checkpoints: 111-114 eval smaller mid-checkpoints: 121-124
-# bp part1 0000:8 0001-0007 1-7 part2 0000: 18 0001-0007 11-17 part3 0000: 28 0001-0007 21-27
+# bp part1 0000:8 0001-0007 1-7 part2 0000: 18 0001-0007 11-17 part3 0000: 28 0001-0007 21-27 (final checkpoints is checkpoint_000180)
 # bp polBRX vs polX: 1-8, 11-18, 21-28
+# bp/eval polX: 1-8 part4 final checkpoints(000180) 0000: 8 0001-0007 1-7, 11-18 mid-checkpoints(000120) 0000: 18 0001-0007 11-17
 
 ####################### TJ bp part #################################
 #!/bin/bash
-
-LAYOUT="open"
-POP_DIR="$OPEN_POP_DIR"
-YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
 
 OPEN_POLICIES=(
   "23" "2" "14" "28" "7" "17" "1" "24"
@@ -115,20 +114,41 @@ OPEN_POLICIES=(
   "11" "25" "4" "22" "6" "18" "13" "15"
 )
 
-for POL in "${OPEN_POLICIES[@]}"; do
+HALLWAY_POLICIES=(
+  "23" "2" "14" "28" "7" "17" "1" "24"
+  "12" "26" "5" "21" "8" "16" "3" "27"
+  "11" "25" "4" "22" "6" "18" "13" "15"
+)
+
+FC_POLICIES=(
+  "23" "2" "14" "28" "7" "17" "1" "24"
+  "12" "26" "5" "21" "8" "16" "3" "27"
+  "11" "25" "4" "22" "6" "18" "13" "15"
+)
+
+RING_POLICIES=(
+  "23" "2" "14" "28" "7" "17" "1" "24"
+  "12" "26" "5" "21" "8" "16" "3" "27"
+  "11" "25" "4" "22" "6" "18" "13" "15"
+)
+
+LAYOUT="hallway"
+POP_DIR="$HALLWAY_POP_DIR"
+YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
+
+for POL in "${HALLWAY_POLICIES[@]}"; do
   echo "Population Directory: $POP_DIR"
   echo "Processing pair: pol$POL vs polBR$POL"
   echo "Using Config: $YAML"
 
-  POL1_PATH="$POP_DIR/pol$POL/policy_state.pkl"
-  POLBR_PATH="$POP_DIR/polBR$POL/policy_state.pkl"
+  POL1_PATH="$POP_DIR/polX/pol$POL/policy_state.pkl"
+  POLBR_PATH="$POP_DIR/polBRX/pol$POL/policy_state.pkl"
 
   AGENT_0_PARAM="pol$POL"
   AGENT_1_PARAM="polBR$POL"
 
   yq e ".BASE_CONFIG.pretrained_model_path[0] = \"$POL1_PATH\"" -i "$YAML"
   yq e ".BASE_CONFIG.pretrained_model_path[1] = \"$POLBR_PATH\"" -i "$YAML"
-
 
   echo "Running evaluation for $AGENT_0_PARAM vs $AGENT_1_PARAM"
   python agent_characterization/gen_data.py \
@@ -143,8 +163,6 @@ for POL in "${OPEN_POLICIES[@]}"; do
   echo "Completing processing for pair pol$POL vs polBR$POL"
   echo "----------------------------------------"
 done
-
-echo "All directories processed"
 
 
 
