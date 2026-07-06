@@ -152,7 +152,7 @@ for POL in "${HALLWAY_POLICIES[@]}"; do
 
   echo "Running evaluation for $AGENT_0_PARAM vs $AGENT_1_PARAM"
   python agent_characterization/gen_data.py \
-    --eval-episodes 18 \
+    --eval-episodes 12 \
     --agent-0 "$AGENT_0_PARAM" \
     --agent-1 "$AGENT_1_PARAM" \
     --dataset-path "./data/burrito_${LAYOUT}_bp_3parts_pol24.pkl" \
