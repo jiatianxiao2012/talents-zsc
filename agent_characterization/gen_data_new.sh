@@ -132,11 +132,11 @@ RING_POLICIES=(
   "11" "25" "4" "22" "6" "18" "13" "15"
 )
 
-LAYOUT="hallway"
-POP_DIR="$HALLWAY_POP_DIR"
+LAYOUT="fc"
+POP_DIR="$FC_POP_DIR"
 YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
 
-for POL in "${HALLWAY_POLICIES[@]}"; do
+for POL in "${FC_POLICIES[@]}"; do
   echo "Population Directory: $POP_DIR"
   echo "Processing pair: pol$POL vs polBR$POL"
   echo "Using Config: $YAML"
@@ -152,7 +152,7 @@ for POL in "${HALLWAY_POLICIES[@]}"; do
 
   echo "Running evaluation for $AGENT_0_PARAM vs $AGENT_1_PARAM"
   python agent_characterization/gen_data.py \
-    --eval-episodes 18 \
+    --eval-episodes 12 \
     --agent-0 "$AGENT_0_PARAM" \
     --agent-1 "$AGENT_1_PARAM" \
     --dataset-path "./data/burrito_${LAYOUT}_bp_3parts_pol24.pkl" \
