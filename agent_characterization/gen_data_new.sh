@@ -132,11 +132,11 @@ RING_POLICIES=(
   "11" "25" "4" "22" "6" "18" "13" "15"
 )
 
-LAYOUT="hallway"
-POP_DIR="$HALLWAY_POP_DIR"
+LAYOUT="fc"
+POP_DIR="$FC_POP_DIR"
 YAML="${YAML_CONFIG}_${LAYOUT}.yaml"
 
-for POL in "${HALLWAY_POLICIES[@]}"; do
+for POL in "${FC_POLICIES[@]}"; do
   echo "Population Directory: $POP_DIR"
   echo "Processing pair: pol$POL vs polBR$POL"
   echo "Using Config: $YAML"
