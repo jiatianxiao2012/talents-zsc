@@ -18,13 +18,13 @@ N_CLUSTERS: &n_clusters 11
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/hallway_bp/20260626_w_50_h_50_b_0.05/"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/hallway_bp/20260707_w_50_h_50_b_0.01/"
   latent_dim: 8
   window_length: 50
   vae_horizon: 50
   action_dim: 27
   obs_shape: [10, 12, *obs_channel]
-  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/hallway_bp/20260626_w_50_h_50_b_0.05/kmeans/gaussians.pkl"
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/hallway_bp/20260707_w_50_h_50_b_0.01/kmeans/gaussians.pkl"
 
 # Model configuration using cluster conditioning
 MODEL_CONFIG:
@@ -210,20 +210,20 @@ BASE_CONFIG:
   #   - 17
 
   evaluation_interval: 40
-  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/pp_24_selected
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_bp_1500000_8/eval
   pretrained_model_paths:
+    - 1
     - 3
-    - 23
     - 16
-    - 24
-    - 13
-    - 21
-    - 15
-    - 27
     - 2
-    - 11
+    - 14
     - 4
+    - 15
+    - 5
     - 12
+    - 11
+    - 13
+    - 6
  
   # Include VAE configuration
   <<: *vae_config
