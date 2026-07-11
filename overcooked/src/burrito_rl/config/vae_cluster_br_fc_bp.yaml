@@ -24,13 +24,13 @@ N_CLUSTERS: &n_clusters 11
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/fc_bp/20260707_w_50_h_50_b_0.01/"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/fc_bp/20260710_w_50_h_50_b_0.001/"
   latent_dim: 8
   window_length: 50
   vae_horizon: 50
   action_dim: 27
   obs_shape: [10, 8, *obs_channel]
-  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/fc_bp/20260707_w_50_h_50_b_0.01/kmeans/gaussians.pkl"
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/fc_bp/20260710_w_50_h_50_b_0.001/kmeans/gaussians.pkl"
 
 # Model configuration using cluster conditioning
 MODEL_CONFIG:
