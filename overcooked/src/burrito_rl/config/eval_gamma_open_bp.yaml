@@ -158,7 +158,7 @@ BASE_CONFIG:
 
   pretrained_model_path_BR: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/policy_params/gamma/gamma_open_bp_1500000_8/0000/checkpoint_000391/policies/polBR/policy_state.pkl"
 
-  pretrained_model_path_eval: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_sp_10000000/0000/checkpoint_000300/policies/default_policy/policy_state.pkl"
+  pretrained_model_path_eval: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_sp_10000000/0000/checkpoint_000600/policies/default_policy/policy_state.pkl"
 
   #pretrained_model_path_BR: "/Users/benjili/Research/burrito_cooperation/overcooked/src/burrito_rl/policy_params/vaebr_DEMO-1/polBR1/policy_state.pkl" # reward vaebr for demo
 
