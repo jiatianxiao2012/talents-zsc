@@ -18,3 +18,8 @@ data/15000000/*.part-* filter=lfs diff=lfs merge=lfs -text
 "benji_config/bp configs/forced_coordination_2p_bp.yaml" -filter -diff -merge text
 
 agent_characterization/gen_data_new.sh -filter -diff -merge text
+
+"benji_config/bp configs/mep-fcp/forced_coordination_2p_pp.yaml" -filter -diff -merge text
+"benji_config/bp configs/mep-fcp/hallway_2p_pp.yaml" -filter -diff -merge text
+"benji_config/bp configs/mep-fcp/open_2p_pp.yaml" -filter -diff -merge text
+"benji_config/bp configs/mep-fcp/ring_2p_pp.yaml" -filter -diff -merge text
