@@ -5,7 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import argparse
 
-def eval_and_cluster(vae, dataset, save_path, batch_size,clusters=[2,]):
+def eval_and_cluster(vae, dataset, save_path, batch_size,clusters=[2,20]):
     info = preprocess_data(vae, dataset, save_path, batch_size)
     accuracy, cluster_labels, gaussians = analyze_kmeans_clusters(info, save_path, clusters[0], clusters[1])
     #compute_human_agent_js_divergence(vae, dataset, save_path)
