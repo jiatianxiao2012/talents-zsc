@@ -32,3 +32,8 @@ agent_characterization/gen_data_new.sh -filter -diff -merge text
 "overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_hallway.yaml" -filter -diff -merge text
 "overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_fc.yaml" -filter -diff -merge text
 "overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_ring.yaml" -filter -diff -merge text
+
+"overcooked/src/burrito_rl/config/br_fc_fcp.yaml" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/br_ring_fcp.yaml" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/br_hallway_fcp.yaml" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/br_open_fcp.yaml" -filter -diff -merge text

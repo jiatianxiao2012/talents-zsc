@@ -140,7 +140,7 @@ BASE_CONFIG:
   env: burrito
   count_steps_by: env_steps
   alg: "BR"
-  n_population: 12
+  n_population: 24
   sgd_minibatch_size: 768 # sgd minibatch for each policy
   num_sgd_iter: 4
   train_batch_size: 38400
@@ -173,8 +173,8 @@ BASE_CONFIG:
   #   num_envs_per_worker: 5
   framework: torch
   use_gae: true
-  population_path: /data/shuyang/overcooked/src/burrito_rl/policy_params/ring_fcp_population/
-  specific_partners: [1,2,25,26,29,30,32,4,5,6,7]
+  population_path: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_fcp_15000000/selected_24
+  specific_partners: [27,2,17,12,25,5,14,15,22,4,24,7,3,11,8,23,16,13,1,21,18,28,6,26]
   partner_sampling_method: priority # random or priority
   num_history: 10
 
@@ -186,15 +186,17 @@ BASE_CONFIG:
   decay_factor: 1
 
   evaluation_interval: 40
-  pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/ring_bp_population
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/ring_pp_fcp_15000000/eval
   pretrained_model_paths:
-    - 33
-    - 27
-    - 3
-    - 22
-    - 8
-    - 20
-    - 31
-    - 28
-    - 14
-    - 17
+    - 101
+    - 102
+    - 103
+    - 104
+    - 111
+    - 112
+    - 113
+    - 114
+    - 121
+    - 122
+    - 123
+    - 124
