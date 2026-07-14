@@ -23,3 +23,12 @@ agent_characterization/gen_data_new.sh -filter -diff -merge text
 "benji_config/bp configs/mep-fcp/hallway_2p_pp.yaml" -filter -diff -merge text
 "benji_config/bp configs/mep-fcp/open_2p_pp.yaml" -filter -diff -merge text
 "benji_config/bp configs/mep-fcp/ring_2p_pp.yaml" -filter -diff -merge text
+
+"agent_characterization/gen_data_new_open_fcp.sh" -filter -diff -merge text
+"agent_characterization/gen_data_new_hallway_fcp.sh" -filter -diff -merge text
+"agent_characterization/gen_data_new_fc_fcp.sh" -filter -diff -merge text
+"agent_characterization/gen_data_new_ring_fcp.sh" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_open.yaml" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_hallway.yaml" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_fc.yaml" -filter -diff -merge text
+"overcooked/src/burrito_rl/config/burrito_2p_gendata_fcp_ring.yaml" -filter -diff -merge text
