@@ -4,17 +4,17 @@ N_AGENTS: &n_agnets 2
 ACTOR_EMBEDDING_DIM: &actor_embedding_dim 200 #776
 CRITIC_EMBEDDING_DIM: &critic_embedding_dim 200 #776
 CLUSTER_EMBEDDING_DIM: &cluster_embedding_dim 32
-N_CLUSTERS: &n_clusters 14
+N_CLUSTERS: &n_clusters 3
 
 # VAE Configuration
 VAE_CONFIG: &vae_config
-  vae_path: "/data/benji/strategy-adaptation/agent_characterization/open_fcp/20250513_211637_ep_100/" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/"
+  vae_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_fcp/20260714_w_50_h_50_b_0.01" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/"
   latent_dim: 8
   window_length: 50
   vae_horizon: 50
   action_dim: 27
   obs_shape: [7, 10, *obs_channel]
-  gaussians_path: "/data/benji/strategy-adaptation/agent_characterization/open_fcp/20250513_211637_ep_100/14cl/kmeans/gaussians.pkl" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/kmeans/gaussians.pkl"
+  gaussians_path: "/home/gpu01/tianxiaojia/Workplace2/talents-zsc/encoder/open_fcp/20260714_w_50_h_50_b_0.01/kmeans/gaussians.pkl" #"/Users/benjili/Research/burrito_cooperation/agent_characterization/encoder_training/20250505_163557_ep_50/kmeans/gaussians.pkl"
 
 # Model configuration using cluster conditioning
 MODEL_CONFIG:
@@ -187,18 +187,20 @@ BASE_CONFIG:
   decay_factor: 1
 
   evaluation_interval: 40
-  pretrained_model_dir: /data/shuyang/overcooked/src/burrito_rl/policy_params/open_bp_population
+  pretrained_model_dir: /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/open_pp_fcp_15000000/eval
   pretrained_model_paths:
-    - 33
-    - 27
-    - 3
-    - 22
-    - 8
-    - 20
-    - 31
-    - 28
-    - 14
-    - 17
+    - 101
+    - 102
+    - 103
+    - 104
+    - 111
+    - 112
+    - 113
+    - 114
+    - 121
+    - 122
+    - 123
+    - 124
 
   # Include VAE configuration
   <<: *vae_config
