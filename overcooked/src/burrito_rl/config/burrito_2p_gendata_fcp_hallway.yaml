@@ -178,5 +178,5 @@ BASE_CONFIG:
   framework: torch
   use_gae: true
   pretrained_model_path:
-    - /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_fcp_15000000/0000/checkpoint_000000/pol14/policy_state.pkl
-    - /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_fcp_15000000/0000/checkpoint_000000/pol3/policy_state.pkl
+    - /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_fcp_15000000/selected_24/pol14/policy_state.pkl
+    - /home/gpu01/tianxiaojia/Workplace2/talents-zsc/overcooked/src/burrito_rl/policy_params/hallway_pp_fcp_15000000/selected_24/pol3/policy_state.pkl
