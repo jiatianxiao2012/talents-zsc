@@ -50,3 +50,5 @@ overcooked/src/burrito_rl/config/eval_vaebr_fc_fcp.yaml -filter -diff -merge tex
 overcooked/src/burrito_rl/config/eval_gamma_fc_fcp.yaml -filter -diff -merge text
 
 overcooked/src/burrito_rl/config/eval_gamma_fc_fcp.yaml -filter -diff -merge text
+
+overcooked/src/burrito_rl/config/eval_gamma_fc_fcp.yaml -filter -diff -merge text
