@@ -40,3 +40,6 @@ agent_characterization/gen_data_new.sh -filter -diff -merge text
 
 "overcooked/src/burrito_rl/config/vae_cluster_br_ring_fcp.yaml" -filter -diff -merge text
 "overcooked/src/burrito_rl/config/gamma_br_ring_fcp.yaml" -filter -diff -merge text
+
+overcooked/src/burrito_rl/config/eval_gamma_*_fcp.yaml -filter -diff -merge text
+overcooked/src/burrito_rl/config/eval_vaebr_*_fcp.yaml -filter -diff -merge text
